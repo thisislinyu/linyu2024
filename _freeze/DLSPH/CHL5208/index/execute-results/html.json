@@ -1,0 +1,15 @@
+{
+  "hash": "eee46608b53040f3d3bf773d6c9b73fe",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"CHL5208 practicum course\"\ndescription: |\n  \nimage: penguins.png\ndraft: false\n---\n\n\n> Nov 23, 2023\n\n\n\n::: {.cell}\n<iframe src=\"/static/slides/5208present1116.html\" width=\"672\" height=\"400px\" data-external=\"1\"></iframe>\n:::\n\n\n修改好的[第二版](static/slides/5208present1116.html#1)\n\n> 2024-04-25 更新 这次主要增加了结果部分\n\n最后一击请看[这里](CHL5208_LinYu_winter_term0425.pdf)\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
