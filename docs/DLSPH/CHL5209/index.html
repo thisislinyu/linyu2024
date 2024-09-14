@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Lin Yu">
 
-<title>Lin Yu - DLSPH</title>
+<title>Lin Yu – CHL5209 Survival Analysis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,27 +24,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./logos/favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../logos/favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,38 +69,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -118,15 +86,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./posts.html"> 
+    <a class="nav-link" href="../../posts.html"> 
 <span class="menu-text">Post</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./DLSPH.html" aria-current="page"> 
+    <a class="nav-link" href="../../DLSPH.html"> 
 <span class="menu-text">DLSPH</span></a>
   </li>  
 </ul>
@@ -137,107 +105,112 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">CHL5209 Survival Analysis</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p><a href="https://thisislinyu.github.io/">Lin Yu</a> </p>
+            </div>
+    </div>
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#rate-is-not-a-probability" id="toc-rate-is-not-a-probability" class="nav-link active" data-scroll-target="#rate-is-not-a-probability">Rate is not a probability</a></li>
+  <li><a href="#write-the-likelihood" id="toc-write-the-likelihood" class="nav-link" data-scroll-target="#write-the-likelihood">Write the likelihood</a></li>
+  <li><a href="#immortal-time-bias" id="toc-immortal-time-bias" class="nav-link" data-scroll-target="#immortal-time-bias">immortal time bias</a></li>
+  <li><a href="#homework-sets" id="toc-homework-sets" class="nav-link" data-scroll-target="#homework-sets">Homework sets</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">DLSPH</h1>
-</div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<p><a href="survival_analysis_comps.pdf">cheatsheet</a></p>
+<section id="rate-is-not-a-probability" class="level1">
+<h1>Rate is not a probability</h1>
+<ol type="1">
+<li>model time? e.g., log T = Z/linear predictor –&gt; censoring/ missing data problem. the out come time-to-event is not always observed due to censoring/competing risk.<br>
+</li>
+<li>Model rate: the aggregated data: known the total number of years and the total number of events</li>
+</ol>
+<ul>
+<li>why rate works? the rate param captures the <strong>instantaneous occurrence</strong> of the outcome <strong>at any given time</strong>.（count of success = 每个<strong>瞬时时间点</strong>上的发生数量，乘上观测总时间）</li>
+<li>while risk param is the <strong>probability</strong> of an event occurring <strong>within a specific time period</strong>.<br>
+</li>
+<li>risk-rate connection:</li>
+<li>In probability theory and statistics, the Poisson distribution is a discrete probability distribution that expresses the probability of a given number of events occurring in a fixed interval of time if these events occur with a known <strong>constant mean rate(?)</strong> and independently of the time since the last event.<br>
+</li>
+</ul>
+<ol start="3" type="1">
+<li>Poisson model<br>
+</li>
+</ol>
+<ul>
+<li>The likelihood: D ~ Poisson(lambda*Y), where log(lambda) = something (the log-linear model), then parametrize log(lambda) in terms of alpha and beta. substitute the model into the PDF to get the likelihood.</li>
+</ul>
+<blockquote class="blockquote">
+<p>2024-06-09更新</p>
+</blockquote>
+<ol type="1">
+<li>傻傻分不清到底哪个是constant –&gt; rate is constant（instantaneous occurrence of the outcome at any given time). 我们把总时间Y划分为N个小bin，每个小bin为一个单位unit h, that is, Y = Nh. h足够小的时候，每一个小bin只有一个事件发生，则每个小bin都是一个Bern(pi),–&gt; 每个小bin的expected number = pi(Bern dist property). <strong>mu = pi(risk)</strong> (1),<br>
+</li>
+<li>在pois dist,我们有 <strong>mu = lambda(rate)*h</strong>(2)<br>
+</li>
+<li>这样结合(1)和 (2)，我们有了rate-risk connection: <strong>mu = pi(risk)=lambda(rate)h</strong></li>
+<li>然后我们就可以算survival probability啦：survival up to time T = (1 - risk)^N [T时间内一共有N个bin]= (1-lambda*h)^N –&gt; approx. exp(-lambda*T)其中，lambda*T 是cumulative hazard. <strong>surv prob(T) = (1-lambda*h)^N = Aexp(-lambda*T)</strong></li>
+</ol>
+</section>
+<section id="write-the-likelihood" class="level1">
+<h1>Write the likelihood</h1>
+<ol type="1">
+<li><p>写likelihood的时候，我们的结局变量outcome包含了 event status and time, 所以我们写的是每个人的一个joint pdf: prob of (event happened/censored at time t)，并且是marginal的，并不是conditional。</p></li>
+<li><p>RV 有哪些呢： (i)censoring dist; (2) latent event time dist;</p></li>
+<li><p>但是我们的数据是observed data, 我们的模型是wrt latent event time的， 所以我们需要一些假设们来得到一些identification.<br>
+(A1): indep censoring :censoring time and latent event time indep given covariates<br>
+(A2)：non-informative censoring: censoring not involve theta(param of interest)，所以在likelihood里面可以把它当作constant，不用放进likelihood里边</p></li>
+<li><p>写出general case的likelihood之后呢，可以看到需要代入 lambda(t) (hazard rate) 和survival function(t), 这就非常的简单～～以pois为例子：lambda(t) = lambda（constant）； S(t) 和 hazard function 是有一个公式联系起来的，S(T) = exp(-lambda(t)*T).带进去就行。</p></li>
+</ol>
+<p>constant hazard model写likelihood可以用几种方式来写，可见cheatsheet</p>
+</section>
+<section id="immortal-time-bias" class="level1">
+<h1>immortal time bias</h1>
+<p><a href="2024_03_24_immortal_time_bias.pdf">immortal time bias</a></p>
+</section>
+<section id="homework-sets" class="level1">
+<h1>Homework sets</h1>
+<ul>
+<li><a href="CHL5209_HW1_All_in_One.pdf">HW1</a></li>
+<li><a href="CHL5209_HW2_All_in_One.pdf">HW2</a></li>
+<li><a href="CHL5209_HW3.pdf">HW3</a></li>
+<li><a href="CHL5209_HW4.pdf">HW4</a></li>
+</ul>
+</section>
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1726330490776" data-listing-reading-time-sort="1" data-listing-word-count-sort="7">
-<a href="./DLSPH/CHL5260/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-CHL5260
-</h5>
-<div class="card-text listing-description">
-2024/02/29 CHL5260_concpet_proposal
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Lin Yu
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1726329074998" data-listing-reading-time-sort="1" data-listing-word-count-sort="7">
-<a href="./DLSPH/CHL5208/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./DLSPH/CHL5208/penguins.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-CHL5208 practicum course
-</h5>
-<div class="card-text listing-description">
-Nov 23, 2023
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Lin Yu
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1726351446720" data-listing-reading-time-sort="5" data-listing-word-count-sort="970">
-<a href="./DLSPH/CHL5209/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-CHL5209 Survival Analysis
-</h5>
-<div class="card-text listing-description">
-cheatsheet
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Lin Yu
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -645,8 +618,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>This website is built with <i class="fa-solid fa-heart" title="a heart" aria-label="heart"></i>, <a href="https://github.com/samanthacsik/samanthacsik.github.io" target="_blank"><i class="fa-brands fa-github" title="GitHub octocat logo" aria-label="github"></i></a>, <a href="https://www.r-project.org/about.html" target="_blank"><i class="fa-brands fa-r-project" title="R Project" aria-label="r-project"></i></a> and <a href="https://quarto.org/" target="_blank">Quarto</a></p>
-</div>
+      <div class="footer-contents">This website is built with , [](https://github.com/samanthacsik/samanthacsik.github.io){target=_blank}, [](https://www.r-project.org/about.html){target=_blank} and [Quarto](https://quarto.org/){target=_blank}</div>  
+    </div>
   </div>
 </footer>
 

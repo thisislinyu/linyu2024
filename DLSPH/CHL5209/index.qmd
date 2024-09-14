@@ -1,0 +1,55 @@
+---
+title: "CHL5209 Survival Analysis"
+---
+
+[cheatsheet](survival_analysis_comps.pdf)
+
+# Rate is not a probability 
+
+1.  model time? e.g., log T = Z/linear predictor --\> censoring/ missing data problem. the out come time-to-event is not always observed due to censoring/competing risk.\
+2.  Model rate: the aggregated data: known the total number of years and the total number of events
+
+-   why rate works? the rate param captures the **instantaneous occurrence** of the outcome **at any given time**.（count of success = 每个**瞬时时间点**上的发生数量，乘上观测总时间）
+-   while risk param is the **probability** of an event occurring **within a specific time period**.\
+-   risk-rate connection:
+-   In probability theory and statistics, the Poisson distribution is a discrete probability distribution that expresses the probability of a given number of events occurring in a fixed interval of time if these events occur with a known **constant mean rate(?)** and independently of the time since the last event.\
+
+3.  Poisson model\
+
+-   The likelihood: D \~ Poisson(lambda\*Y), where log(lambda) = something (the log-linear model), then parametrize log(lambda) in terms of alpha and beta. substitute the model into the PDF to get the likelihood.
+
+> 2024-06-09更新
+
+1.  傻傻分不清到底哪个是constant --\> rate is constant（instantaneous occurrence of the outcome at any given time). 我们把总时间Y划分为N个小bin，每个小bin为一个单位unit h, that is, Y = Nh. h足够小的时候，每一个小bin只有一个事件发生，则每个小bin都是一个Bern(pi),--\> 每个小bin的expected number = pi(Bern dist property). **mu = pi(risk)** (1),\
+2.  在pois dist,我们有 **mu = lambda(rate)\*h**(2)\
+3.  这样结合(1)和 (2)，我们有了rate-risk connection: **mu = pi(risk)=lambda(rate)h**
+4.  然后我们就可以算survival probability啦：survival up to time T = (1 - risk)\^N [T时间内一共有N个bin]= (1-lambda\*h)\^N --\> approx. exp(-lambda\*T)其中，lambda\*T 是cumulative hazard. **surv prob(T) = (1-lambda\*h)\^N = Aexp(-lambda\*T)**
+
+# Write the likelihood
+
+
+1. 写likelihood的时候，我们的结局变量outcome包含了 event status and time, 所以我们写的是每个人的一个joint pdf: prob of (event happened/censored at time t)，并且是marginal的，并不是conditional。 
+2. RV 有哪些呢： (i)censoring dist; (2) latent event time dist; 
+2. 但是我们的数据是observed data, 我们的模型是wrt latent event time的， 所以我们需要一些假设们来得到一些identification.  
+  (A1): indep censoring :censoring time and latent event time indep given covariates           
+  (A2)：non-informative censoring: censoring not involve theta(param of interest)，所以在likelihood里面可以把它当作constant，不用放进likelihood里边
+
+2. 写出general case的likelihood之后呢，可以看到需要代入 lambda(t) (hazard rate) 和survival function(t), 这就非常的简单～～以pois为例子：lambda(t)  = lambda（constant）；
+S(t) 和 hazard function 是有一个公式联系起来的，S(T) = exp(-lambda(t)*T).带进去就行。
+
+constant hazard model写likelihood可以用几种方式来写，可见cheatsheet
+
+# immortal time bias
+
+[immortal time bias](2024_03_24_immortal_time_bias.pdf) 
+
+# Homework sets
+
+- [HW1](CHL5209_HW1_All_in_One.pdf)
+- [HW2](CHL5209_HW2_All_in_One.pdf)
+- [HW3](CHL5209_HW3.pdf)
+- [HW4](CHL5209_HW4.pdf)
+
+
+
+
