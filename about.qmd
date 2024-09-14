@@ -1,9 +1,17 @@
 ---
-title: "About"
+title: ""
+about:
+  template: jolla
+  image: logos/profile.JPG
+  image-width: 17em
+  image-shape: round
+  links:
+    - icon: linkedin 
+      text: LinkedIn
+      href: https://www.linkedin.com/in/yourlinkedinname/
+    - icon: github
+      text: Github
+      href: https://github.com
 ---
 
-About this site
-
-```{r}
-1 + 1
-```
+送你三千万:千万要健康🏃‍♀️,千万要快乐🌻,千万要幸福💕

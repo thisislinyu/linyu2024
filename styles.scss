@@ -1,0 +1,52 @@
+/*-- scss:defaults --*/
+
+// Import Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+// Nature-inspired Colors
+$dark-green: #7A856D;
+$light-green: #C5D1BA;
+$cream: #F0EFEA;
+$gray: #6E665B;
+$earthy-brown: #A67F59;
+$muted-olive: #9C9464;
+$burnt-orange: #D08C60; // Warm, Morandi-style burnt orange
+
+// Base document colors
+$navbar-bg: $cream; // navbar background
+$navbar-fg: $dark-green; // navbar foreground elements
+$navbar-hl: $burnt-orange; // highlight color when hovering over navbar links
+$body-bg: $cream; // page background 
+$body-color: $gray; // page text 
+$footer-bg: $light-green; // footer background
+$link-color: $burnt-orange; // hyperlinks 
+
+// Inline code
+$code-bg: $cream; // inline code background color
+$code-color: $muted-olive; // inline code text color
+
+/*-- scss:rules --*/
+
+h1, h2 {
+  letter-spacing: 5px;
+  font-weight: 800;
+}
+
+.title {
+  color: $burnt-orange; // Change title color to burnt orange
+}
+
+.center-text {
+  text-align: center;
+}
+
+.orange-text {
+  color: $burnt-orange; // Change any orange-text class to burnt orange
+}
+
+.navbar-brand img { 
+  max-height: 50px;
+  width: auto;
+}
+

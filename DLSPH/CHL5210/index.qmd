@@ -1,0 +1,15 @@
+---
+title: "CHL5208 practicum course"
+description: |
+  
+image: penguins.png
+draft: false
+---
+
+> Nov 23, 2023 
+
+修改好的[第二版](files/5208present1116.html#1)
+
+> 2024-04-25 更新 这次主要增加了结果部分
+
+最后一击请看[这里](files/CHL5208_LinYu_winter_term0425.pdf)
