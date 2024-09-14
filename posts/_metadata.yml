@@ -1,15 +1,15 @@
 # options specified here will apply to all posts in this folder
 
-# re-render posts only when a change to the source file is made ----
+# freeze computational output
+# (see https://quarto.org/docs/projects/code-execution.html#freeze)
 freeze: auto
 
-# enable banner style title blocks ----
-title-block-banner: true
-
+# Enable banner style title blocks
+title-block-banner: false
 # my author info
-author:
-  - name: Lin Yu
-    url: https://thisislinyu.github.io/
+#author:
+#  - name: Lin Yu
+#    url: https://thisislinyu.github.io/
     # orcid: 0000-0002-5300-3075
     # affiliation: Master of Environmental Data Science Program @ The Bren School (UCSB) & The National Center for Ecological Analysis and Synthesis
     # affiliation-url: https://ucsb-meds.github.io/ 

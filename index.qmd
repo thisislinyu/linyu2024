@@ -1,11 +1,17 @@
 ---
-title: "linyu2024"
+title: ""
+about:
+  template: jolla
+  image: logos/profile.JPG
+  image-width: 17em
+  image-shape: round
+  links:
+    - icon: linkedin 
+      text: LinkedIn
+      href: https://www.linkedin.com/in/yourlinkedinname/
+    - icon: github
+      text: Github
+      href: https://github.com
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```
+送你三千万:千万要健康🏃‍♀️,千万要快乐🌻,千万要幸福💕
