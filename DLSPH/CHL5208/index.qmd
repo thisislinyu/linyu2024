@@ -8,7 +8,7 @@ draft: false
 
 > Nov 23, 2023
 
-修改好的[第二版](5208present1116.html#1)
+修改好的[第二版](static/slides/5208present1116.html#1)
 
 > 2024-04-25 更新 这次主要增加了结果部分
 
