@@ -43,6 +43,14 @@ constant hazard model写likelihood可以用几种方式来写，可见cheatsheet
 
 [immortal time bias](2024_03_24_immortal_time_bias.pdf) 
 
+# KM survival curve calculation
+
+一生总要计算一次的[KM curve](2024_03_08KM_curve.pdf)重要总结：           
+#1: 先写表格：              1)表格第一列为时间段，左闭右开，每个time interval 的下界为事件发生的时间点们，比如对于control arm，在observed time= 1.5的时候就没有事件发生，survival curve不会下降，就没有必要写time interval [1.25,1.5)，而是直接写[1.25,2)，左闭右开可以这样理解，比如treatment arm的第一个death发生在observed time=1， time interval则是[0,1),在这个区间里，我们依然认为这个人是at-risk,另外还有一种情况是有人在observed time = 1的时候删失了，那这个人还是at-risk,因为我们的区间是不包含1的，至少在time=1之前这个人是at-risk 所以用这样的区间就比较直观; 2) 然后censor(c)，deathD(d)，at-risk(r)人数，1-d/r, survival则可以计算为(1-d/r)的累乘           
+#2: 然后是画图，我们可以把删失用+号表示     
+#3: 找risk set的以后，我们也可以通过在follow up图上画一个vertical line,交点的个数就是# of pts at-risk at time t.
+
+
 # Homework sets
 
 - [HW1](CHL5209_HW1_All_in_One.pdf)

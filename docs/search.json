@@ -7,6 +7,34 @@
     "text": "qmd file for posts\n\n\n\n\n\n\n\n\n\n\n\n\ntest blog\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
+    "objectID": "DLSPH/HAD7002/index.html",
+    "href": "DLSPH/HAD7002/index.html",
+    "title": "HAD7002 Causal Inference",
+    "section": "",
+    "text": "W3: standardization\nW7: effect decomposition"
+  },
+  {
+    "objectID": "DLSPH/HAD7002/index.html#course-notes",
+    "href": "DLSPH/HAD7002/index.html#course-notes",
+    "title": "HAD7002 Causal Inference",
+    "section": "",
+    "text": "W3: standardization\nW7: effect decomposition"
+  },
+  {
+    "objectID": "DLSPH/HAD7002/index.html#homework-sets",
+    "href": "DLSPH/HAD7002/index.html#homework-sets",
+    "title": "HAD7002 Causal Inference",
+    "section": "Homework sets",
+    "text": "Homework sets\n\nHW1\nHW2\nHW3\nHW4"
+  },
+  {
+    "objectID": "DLSPH/HAD7002/index.html#group-projects",
+    "href": "DLSPH/HAD7002/index.html#group-projects",
+    "title": "HAD7002 Causal Inference",
+    "section": "Group projects",
+    "text": "Group projects\n\nGroup presentation\nGroup project"
+  },
+  {
     "objectID": "DLSPH/CHL5208/index.html",
     "href": "DLSPH/CHL5208/index.html",
     "title": "CHL5208 practicum course",
@@ -25,7 +53,7 @@
     "href": "DLSPH.html",
     "title": "DLSPH",
     "section": "",
-    "text": "CHL5260\n\n\n\n\n\n\nLin Yu\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCHL5208 practicum course\n\n\n\n\n\n\nLin Yu\n\n\n\n\n\n\n\n\n\n\n\n\nCHL5209 Survival Analysis\n\n\n\n\n\n\nLin Yu\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "CHL5260\n\n\n\n\n\n\nLin Yu\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCHL5208 practicum course\n\n\n\n\n\n\nLin Yu\n\n\n\n\n\n\n\n\n\n\n\n\nCHL5209 Survival Analysis\n\n\n\n\n\n\nLin Yu\n\n\n\n\n\n\n\n\n\n\n\n\nHAD7002 Causal Inference\n\n\n\n\n\n\nLin Yu\n\n\n\n\n\n\n\n\n\n\n\n\nComps\n\n\n\n\n\n\nLin Yu\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/2024-09-14-test/index.html",
@@ -53,6 +81,62 @@
     "href": "DLSPH/CHL5209/index.html",
     "title": "CHL5209 Survival Analysis",
     "section": "",
-    "text": "cheatsheet\n\nRate is not a probability\n\nmodel time? e.g., log T = Z/linear predictor –&gt; censoring/ missing data problem. the out come time-to-event is not always observed due to censoring/competing risk.\n\nModel rate: the aggregated data: known the total number of years and the total number of events\n\n\nwhy rate works? the rate param captures the instantaneous occurrence of the outcome at any given time.（count of success = 每个瞬时时间点上的发生数量，乘上观测总时间）\nwhile risk param is the probability of an event occurring within a specific time period.\n\nrisk-rate connection:\nIn probability theory and statistics, the Poisson distribution is a discrete probability distribution that expresses the probability of a given number of events occurring in a fixed interval of time if these events occur with a known constant mean rate(?) and independently of the time since the last event.\n\n\n\nPoisson model\n\n\n\nThe likelihood: D ~ Poisson(lambda*Y), where log(lambda) = something (the log-linear model), then parametrize log(lambda) in terms of alpha and beta. substitute the model into the PDF to get the likelihood.\n\n\n2024-06-09更新\n\n\n傻傻分不清到底哪个是constant –&gt; rate is constant（instantaneous occurrence of the outcome at any given time). 我们把总时间Y划分为N个小bin，每个小bin为一个单位unit h, that is, Y = Nh. h足够小的时候，每一个小bin只有一个事件发生，则每个小bin都是一个Bern(pi),–&gt; 每个小bin的expected number = pi(Bern dist property). mu = pi(risk) (1),\n\n在pois dist,我们有 mu = lambda(rate)*h(2)\n\n这样结合(1)和 (2)，我们有了rate-risk connection: mu = pi(risk)=lambda(rate)h\n然后我们就可以算survival probability啦：survival up to time T = (1 - risk)^N [T时间内一共有N个bin]= (1-lambda*h)^N –&gt; approx. exp(-lambda*T)其中，lambda*T 是cumulative hazard. surv prob(T) = (1-lambda*h)^N = Aexp(-lambda*T)\n\n\n\nWrite the likelihood\n\n写likelihood的时候，我们的结局变量outcome包含了 event status and time, 所以我们写的是每个人的一个joint pdf: prob of (event happened/censored at time t)，并且是marginal的，并不是conditional。\nRV 有哪些呢： (i)censoring dist; (2) latent event time dist;\n但是我们的数据是observed data, 我们的模型是wrt latent event time的， 所以我们需要一些假设们来得到一些identification.\n(A1): indep censoring :censoring time and latent event time indep given covariates\n(A2)：non-informative censoring: censoring not involve theta(param of interest)，所以在likelihood里面可以把它当作constant，不用放进likelihood里边\n写出general case的likelihood之后呢，可以看到需要代入 lambda(t) (hazard rate) 和survival function(t), 这就非常的简单～～以pois为例子：lambda(t) = lambda（constant）； S(t) 和 hazard function 是有一个公式联系起来的，S(T) = exp(-lambda(t)*T).带进去就行。\n\nconstant hazard model写likelihood可以用几种方式来写，可见cheatsheet\n\n\nimmortal time bias\nimmortal time bias\n\n\nHomework sets\n\nHW1\nHW2\nHW3\nHW4"
+    "text": "cheatsheet\n\nRate is not a probability\n\nmodel time? e.g., log T = Z/linear predictor –&gt; censoring/ missing data problem. the out come time-to-event is not always observed due to censoring/competing risk.\n\nModel rate: the aggregated data: known the total number of years and the total number of events\n\n\nwhy rate works? the rate param captures the instantaneous occurrence of the outcome at any given time.（count of success = 每个瞬时时间点上的发生数量，乘上观测总时间）\nwhile risk param is the probability of an event occurring within a specific time period.\n\nrisk-rate connection:\nIn probability theory and statistics, the Poisson distribution is a discrete probability distribution that expresses the probability of a given number of events occurring in a fixed interval of time if these events occur with a known constant mean rate(?) and independently of the time since the last event.\n\n\n\nPoisson model\n\n\n\nThe likelihood: D ~ Poisson(lambda*Y), where log(lambda) = something (the log-linear model), then parametrize log(lambda) in terms of alpha and beta. substitute the model into the PDF to get the likelihood.\n\n\n2024-06-09更新\n\n\n傻傻分不清到底哪个是constant –&gt; rate is constant（instantaneous occurrence of the outcome at any given time). 我们把总时间Y划分为N个小bin，每个小bin为一个单位unit h, that is, Y = Nh. h足够小的时候，每一个小bin只有一个事件发生，则每个小bin都是一个Bern(pi),–&gt; 每个小bin的expected number = pi(Bern dist property). mu = pi(risk) (1),\n\n在pois dist,我们有 mu = lambda(rate)*h(2)\n\n这样结合(1)和 (2)，我们有了rate-risk connection: mu = pi(risk)=lambda(rate)h\n然后我们就可以算survival probability啦：survival up to time T = (1 - risk)^N [T时间内一共有N个bin]= (1-lambda*h)^N –&gt; approx. exp(-lambda*T)其中，lambda*T 是cumulative hazard. surv prob(T) = (1-lambda*h)^N = Aexp(-lambda*T)\n\n\n\nWrite the likelihood\n\n写likelihood的时候，我们的结局变量outcome包含了 event status and time, 所以我们写的是每个人的一个joint pdf: prob of (event happened/censored at time t)，并且是marginal的，并不是conditional。\nRV 有哪些呢： (i)censoring dist; (2) latent event time dist;\n但是我们的数据是observed data, 我们的模型是wrt latent event time的， 所以我们需要一些假设们来得到一些identification.\n(A1): indep censoring :censoring time and latent event time indep given covariates\n(A2)：non-informative censoring: censoring not involve theta(param of interest)，所以在likelihood里面可以把它当作constant，不用放进likelihood里边\n写出general case的likelihood之后呢，可以看到需要代入 lambda(t) (hazard rate) 和survival function(t), 这就非常的简单～～以pois为例子：lambda(t) = lambda（constant）； S(t) 和 hazard function 是有一个公式联系起来的，S(T) = exp(-lambda(t)*T).带进去就行。\n\nconstant hazard model写likelihood可以用几种方式来写，可见cheatsheet\n\n\nimmortal time bias\nimmortal time bias\n\n\nKM survival curve calculation\n一生总要计算一次的KM curve重要总结：\n#1: 先写表格： 1)表格第一列为时间段，左闭右开，每个time interval 的下界为事件发生的时间点们，比如对于control arm，在observed time= 1.5的时候就没有事件发生，survival curve不会下降，就没有必要写time interval [1.25,1.5)，而是直接写[1.25,2)，左闭右开可以这样理解，比如treatment arm的第一个death发生在observed time=1， time interval则是[0,1),在这个区间里，我们依然认为这个人是at-risk,另外还有一种情况是有人在observed time = 1的时候删失了，那这个人还是at-risk,因为我们的区间是不包含1的，至少在time=1之前这个人是at-risk 所以用这样的区间就比较直观; 2) 然后censor(c)，deathD(d)，at-risk(r)人数，1-d/r, survival则可以计算为(1-d/r)的累乘\n#2: 然后是画图，我们可以把删失用+号表示\n#3: 找risk set的以后，我们也可以通过在follow up图上画一个vertical line,交点的个数就是# of pts at-risk at time t. # Homework sets\n\nHW1\nHW2\nHW3\nHW4"
+  },
+  {
+    "objectID": "DLSPH/Comps/index.html",
+    "href": "DLSPH/Comps/index.html",
+    "title": "Comps",
+    "section": "",
+    "text": "Chapter 6 sufficient statistics\nChapter 7 point estimate\nChapter 8 hypothesis testing\nChapterf 9 interval estimation\nChapter 10 hypothesis testing\n\n\n\n\n\nProperties of MLE\nProperties of sample mean\nNormal sample mean\nNormal sample variance\nGeometric and negative binomial connection\nCLT proof\nDelta method\nMarkov chains; Stochastic process\nLinear regression\nOrder statistics\nT distribution\n2-dimensional normal PDF\nExponential family and location-scale\nUniform convolution\nGenerating random variables"
+  },
+  {
+    "objectID": "DLSPH/Comps/index.html#casella-notes",
+    "href": "DLSPH/Comps/index.html#casella-notes",
+    "title": "Comps",
+    "section": "",
+    "text": "Chapter 6 sufficient statistics\nChapter 7 point estimate\nChapter 8 hypothesis testing\nChapterf 9 interval estimation\nChapter 10 hypothesis testing"
+  },
+  {
+    "objectID": "DLSPH/Comps/index.html#side-notes",
+    "href": "DLSPH/Comps/index.html#side-notes",
+    "title": "Comps",
+    "section": "",
+    "text": "Properties of MLE\nProperties of sample mean\nNormal sample mean\nNormal sample variance\nGeometric and negative binomial connection\nCLT proof\nDelta method\nMarkov chains; Stochastic process\nLinear regression\nOrder statistics\nT distribution\n2-dimensional normal PDF\nExponential family and location-scale\nUniform convolution\nGenerating random variables"
+  },
+  {
+    "objectID": "DLSPH/Comps/index.html#数理统计相关",
+    "href": "DLSPH/Comps/index.html#数理统计相关",
+    "title": "Comps",
+    "section": "数理统计相关",
+    "text": "数理统计相关\n\nMathematical statistics by Keith Knight. [book], [solution]\n\nIntroduction to Probability Models by Sheldon M. Ross eleventh edition. [book]\n\nStatistical Inference by George Casella & Roger L. Berger second edition [book]\n\nAll of Statistics by Larry Wasserman[book]"
+  },
+  {
+    "objectID": "DLSPH/Comps/index.html#贝叶斯相关",
+    "href": "DLSPH/Comps/index.html#贝叶斯相关",
+    "title": "Comps",
+    "section": "贝叶斯相关",
+    "text": "贝叶斯相关\n\nBayesian Data Analysis by Andrew Gelman, John B. Carlin and others third edition [book]. [lecture] by Aki Vehtari"
+  },
+  {
+    "objectID": "DLSPH/Comps/index.html#large-sample-相关",
+    "href": "DLSPH/Comps/index.html#large-sample-相关",
+    "title": "Comps",
+    "section": "large sample 相关",
+    "text": "large sample 相关\n\nA Course in Large Sample Theory by Thomas S. Ferguson.[book]"
+  },
+  {
+    "objectID": "DLSPH/Comps/index.html#生存分析相关",
+    "href": "DLSPH/Comps/index.html#生存分析相关",
+    "title": "Comps",
+    "section": "生存分析相关",
+    "text": "生存分析相关"
+  },
+  {
+    "objectID": "DLSPH/Comps/index.html#生物统计相关",
+    "href": "DLSPH/Comps/index.html#生物统计相关",
+    "title": "Comps",
+    "section": "生物统计相关",
+    "text": "生物统计相关\n\nAgresti categorical data analysis [book][solution]."
   }
 ]
