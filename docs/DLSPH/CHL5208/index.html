@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Lin Yu">
+<meta name="description" content="slide decks of my practicum">
 
 <title>Lin Yu - CHL5208 practicum course</title>
 <style>
@@ -90,12 +91,12 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../posts.html"> 
-<span class="menu-text">Post</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../../DLSPH.html"> 
 <span class="menu-text">DLSPH</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts.html"> 
+<span class="menu-text">Posts</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -107,13 +108,18 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
+    <div class="quarto-title column-page-left">
       <h1 class="title">CHL5208 practicum course</h1>
-                      </div>
+                  <div>
+        <div class="description">
+          <p>slide decks of my practicum</p>
+        </div>
+      </div>
+                </div>
   </div>
     
   
-  <div class="quarto-title-meta">
+  <div class="quarto-title-meta column-page-left">
 
       <div>
       <div class="quarto-title-meta-heading">Author</div>
@@ -127,29 +133,47 @@ ul.task-list li input[type="checkbox"] {
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#summary-of-this-project" id="toc-summary-of-this-project" class="nav-link active" data-scroll-target="#summary-of-this-project">Summary of this project</a></li>
+  <li><a href="#materials" id="toc-materials" class="nav-link" data-scroll-target="#materials">Materials</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
 
 
 <blockquote class="blockquote">
-<p>Nov 23, 2023</p>
+<p>A special thanks to <a href="https://www.uhnresearch.ca/researcher/wei-xu">Dr.&nbsp;Xu</a> for always supporting me throughout this project!</p>
 </blockquote>
-<p>修改好的<a href="static/slides/5208present1116.html#1">第二版</a></p>
-<blockquote class="blockquote">
-<p>2024-04-25 更新 这次主要增加了结果部分</p>
-</blockquote>
-<p>最后一击请看<a href="CHL5208_LinYu_winter_term0425.pdf">这里</a></p>
+<section id="summary-of-this-project" class="level2">
+<h2 class="anchored" data-anchor-id="summary-of-this-project">Summary of this project</h2>
+<p><strong>Background</strong>: Cancer survival analysis often confronts high-dimensional data. To allow the implementation of classical statistical modelling such as Cox regression in such setting, feature selection (FS) is commonly conducted before statistical modelling. However, existing algorithms do not often consider the interaction term and ignore the statistical significance of it, even though the interactive effect is of clinical interest in helping understand the complex relationships among variables and reveal potential heterogenous effect among individuals.</p>
+<p><strong>Objectives</strong>: This study aimed to develop high-dimensional feature selection with interactions (HDSI) algorithms for time-to-event outcome that incorporates interactions in the high dimensional setting.</p>
+<p><strong>Methods</strong>: Two algorithms, HDSI-LASSO and HDSI-Ridge were developed by incorporating Cox-LASSO and Cox-Ridge into the HDSI framework. Bootstrap resampling algorithm was developed by incorporating the two-way interaction terms into the model, FS criteria were determined based on pooled significance and model performance of each feature. The performances of the proposed algorithm were evaluated in simulation studies and implemented into a real-world dataset.</p>
+<p><strong>Results</strong>: In the simulations, the HDSI-LASSO and HDSI-Ridge, on average, selected 3 out of 5 true marginal effects, and 1 out of 2 true interactive features. In the real-world study, HDSI- LASSO and HDSI-Ridge selected 7 and 66 out of 4950 interaction terms, respectively. Both algorithms showed good performance by selecting very few noisy features.</p>
+<p>Conclusions: The proposed HDSI algorithms show potential in identifying interactive effects, which consequently, increase the model performance. The HDSI-LASSO offers more robust performance regarding changes in the number of features, while HDSI-Ridge is preferable for lower dimension settings.</p>
+</section>
+<section id="materials" class="level2">
+<h2 class="anchored" data-anchor-id="materials">Materials</h2>
+<ul>
+<li><p>2023-11-23 Fall <a href="static/slides/5208present1116.html#1">presentation</a></p></li>
+<li><p>2024-04-25 Winter presentation <a href="CHL5208_LinYu_winter_term0425.pdf">slide deck</a></p></li>
+<li><p>2024-08-15 My <a href="FinalReport_LinYu.pdf">final report</a></p></li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -8,8 +8,9 @@
 
 <meta name="author" content="Lin Yu">
 <meta name="dcterms.date" content="2022-07-04">
+<meta name="description" content="with opencpu">
 
-<title>Lin Yu - HAD7002 Causal Inference</title>
+<title>Lin Yu - R package test</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -109,8 +110,16 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
-      <h1 class="title">HAD7002 Causal Inference</h1>
-                      </div>
+      <h1 class="title">R package test</h1>
+                  <div>
+        <div class="description">
+          <p>with opencpu</p>
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">R</div>
+              </div>
+                  </div>
   </div>
     
   
@@ -142,9 +151,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#course-notes" id="toc-course-notes" class="nav-link active" data-scroll-target="#course-notes">Course notes</a></li>
-  <li><a href="#homework-sets" id="toc-homework-sets" class="nav-link" data-scroll-target="#homework-sets">Homework sets</a></li>
-  <li><a href="#group-projects" id="toc-group-projects" class="nav-link" data-scroll-target="#group-projects">Group projects</a></li>
+  <li><a href="#step-1-set-up-server" id="toc-step-1-set-up-server" class="nav-link active" data-scroll-target="#step-1-set-up-server">Step 1: set up server</a></li>
+  <li><a href="#step-2-制作docker镜像" id="toc-step-2-制作docker镜像" class="nav-link" data-scroll-target="#step-2-制作docker镜像">Step 2: 制作docker镜像</a></li>
+  <li><a href="#step-3-上传所需要的文件如r包数据-etc.到容器内" id="toc-step-3-上传所需要的文件如r包数据-etc.到容器内" class="nav-link" data-scroll-target="#step-3-上传所需要的文件如r包数据-etc.到容器内">Step 3: 上传所需要的文件（如R包，数据 etc.)到容器内</a></li>
+  <li><a href="#step-4-测试r包" id="toc-step-4-测试r包" class="nav-link" data-scroll-target="#step-4-测试r包">Step 4: 测试R包</a></li>
+  <li><a href="#step-5-提交r包其他部门测试等" id="toc-step-5-提交r包其他部门测试等" class="nav-link" data-scroll-target="#step-5-提交r包其他部门测试等">Step 5: 提交R包(其他部门测试等)</a></li>
   </ul>
 </nav>
     </div>
@@ -155,28 +166,24 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="course-notes" class="level2">
-<h2 class="anchored" data-anchor-id="course-notes">Course notes</h2>
-<ul>
-<li><a href="HAD7002_week3_summary.pdf">W3: standardization</a></li>
-<li><a href="HAD7002_week7_summary.pdf">W7: effect decomposition</a></li>
-</ul>
+<section id="step-1-set-up-server" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-set-up-server">Step 1: set up server</h3>
 </section>
-<section id="homework-sets" class="level2">
-<h2 class="anchored" data-anchor-id="homework-sets">Homework sets</h2>
-<ul>
-<li><a href="HAD7002_HW1.pdf">HW1</a></li>
-<li><a href="HAD7002_HW2.pdf">HW2</a></li>
-<li><a href="HAD7002_HW3.pdf">HW3</a></li>
-<li><a href="HAD7002_HW4.pdf">HW4</a></li>
-</ul>
+<section id="step-2-制作docker镜像" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-制作docker镜像">Step 2: 制作docker镜像</h3>
+<p>可以理解为将需要的文件进行组合打包。主要利用dockerfile进行制作（安装opencpu, R package等）</p>
 </section>
-<section id="group-projects" class="level2">
-<h2 class="anchored" data-anchor-id="group-projects">Group projects</h2>
-<ul>
-<li><a href="HAD7002_pre_June18.pdf">Group presentation</a></li>
-<li><a href="HAD7002_Group_Project.pdf">Group project</a></li>
-</ul>
+<section id="step-3-上传所需要的文件如r包数据-etc.到容器内" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-上传所需要的文件如r包数据-etc.到容器内">Step 3: 上传所需要的文件（如R包，数据 etc.)到容器内</h3>
+<p>将制作好的R包(制作R包可参考<a href="https://r-pkgs.org/whole-game.html">这里</a>)上传到服务器，并将其复制到对应的docker内部。可以利用FTP（File Transfer Protocol）工具来进行上传，上传完毕后安装R包。</p>
+<p><img src="ftp.png" class="img-fluid"></p>
+</section>
+<section id="step-4-测试r包" class="level3">
+<h3 class="anchored" data-anchor-id="step-4-测试r包">Step 4: 测试R包</h3>
+<p>提供接口 URL＋API参数，对 R function(R API) 进行测试,可以利用以下几种工具进行测试： - 利用接口测试工具（如 Postman） - 或者可以利用 Python 的 requests 进行 API 测试； - 或者利用curl命令进行测试</p>
+</section>
+<section id="step-5-提交r包其他部门测试等" class="level3">
+<h3 class="anchored" data-anchor-id="step-5-提交r包其他部门测试等">Step 5: 提交R包(其他部门测试等)</h3>
 
 
 </section>

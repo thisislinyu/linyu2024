@@ -1,5 +1,16 @@
 ---
 title: "HAD7002 Causal Inference"
+description: |
+  
+author:
+  - name: Lin Yu
+    url: https://thisislinyu.github.io/
+date: 2022-07-04
+# date-modified: last-modified
+#bibliography: references.bib
+# categories: []
+image: whatif.PNG
+draft: false
 ---
 
 ## Course notes

@@ -90,12 +90,12 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../posts.html"> 
-<span class="menu-text">Post</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../../DLSPH.html"> 
 <span class="menu-text">DLSPH</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts.html"> 
+<span class="menu-text">Posts</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -107,13 +107,13 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
+    <div class="quarto-title column-page-left">
       <h1 class="title">CHL5209 Survival Analysis</h1>
                       </div>
   </div>
     
   
-  <div class="quarto-title-meta">
+  <div class="quarto-title-meta column-page-left">
 
       <div>
       <div class="quarto-title-meta-heading">Author</div>
@@ -127,7 +127,7 @@ ul.task-list li input[type="checkbox"] {
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -139,11 +139,12 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#write-the-likelihood" id="toc-write-the-likelihood" class="nav-link" data-scroll-target="#write-the-likelihood">Write the likelihood</a></li>
   <li><a href="#immortal-time-bias" id="toc-immortal-time-bias" class="nav-link" data-scroll-target="#immortal-time-bias">immortal time bias</a></li>
   <li><a href="#km-survival-curve-calculation" id="toc-km-survival-curve-calculation" class="nav-link" data-scroll-target="#km-survival-curve-calculation">KM survival curve calculation</a></li>
+  <li><a href="#homework-sets" id="toc-homework-sets" class="nav-link" data-scroll-target="#homework-sets">Homework sets</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
@@ -205,7 +206,10 @@ ul.task-list li input[type="checkbox"] {
 <p>一生总要计算一次的<a href="2024_03_08KM_curve.pdf">KM curve</a>重要总结：<br>
 #1: 先写表格： 1)表格第一列为时间段，左闭右开，每个time interval 的下界为事件发生的时间点们，比如对于control arm，在observed time= 1.5的时候就没有事件发生，survival curve不会下降，就没有必要写time interval [1.25,1.5)，而是直接写[1.25,2)，左闭右开可以这样理解，比如treatment arm的第一个death发生在observed time=1， time interval则是[0,1),在这个区间里，我们依然认为这个人是at-risk,另外还有一种情况是有人在observed time = 1的时候删失了，那这个人还是at-risk,因为我们的区间是不包含1的，至少在time=1之前这个人是at-risk 所以用这样的区间就比较直观; 2) 然后censor(c)，deathD(d)，at-risk(r)人数，1-d/r, survival则可以计算为(1-d/r)的累乘<br>
 #2: 然后是画图，我们可以把删失用+号表示<br>
-#3: 找risk set的以后，我们也可以通过在follow up图上画一个vertical line,交点的个数就是# of pts at-risk at time t. # Homework sets</p>
+#3: 找risk set的以后，我们也可以通过在follow up图上画一个vertical line,交点的个数就是# of pts at-risk at time t.</p>
+</section>
+<section id="homework-sets" class="level1">
+<h1>Homework sets</h1>
 <ul>
 <li><a href="CHL5209_HW1_All_in_One.pdf">HW1</a></li>
 <li><a href="CHL5209_HW2_All_in_One.pdf">HW2</a></li>

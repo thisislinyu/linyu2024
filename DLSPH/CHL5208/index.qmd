@@ -1,18 +1,34 @@
 ---
 title: "CHL5208 practicum course"
 description: |
+  slide decks of my practicum
   
 image: penguins.png
 draft: false
 ---
-
-> Nov 23, 2023
-
+> A special thanks to [Dr. Xu](https://www.uhnresearch.ca/researcher/wei-xu) for always supporting me throughout this project!
 
 
+## Summary of this project
 
-修改好的[第二版](static/slides/5208present1116.html#1)
+**Background**: Cancer survival analysis often confronts high-dimensional data. To allow the implementation of classical statistical modelling such as Cox regression in such setting, feature selection (FS) is commonly conducted before statistical modelling. However, existing algorithms do not often consider the interaction term and ignore the statistical significance of it, even though the interactive effect is of clinical interest in helping understand the complex
+relationships among variables and reveal potential heterogenous effect among individuals.
 
-> 2024-04-25 更新 这次主要增加了结果部分
+**Objectives**: This study aimed to develop high-dimensional feature selection with interactions (HDSI) algorithms for time-to-event outcome that incorporates interactions in the high dimensional setting.
 
-最后一击请看[这里](CHL5208_LinYu_winter_term0425.pdf)
+**Methods**: Two algorithms, HDSI-LASSO and HDSI-Ridge were developed by incorporating Cox-LASSO and Cox-Ridge into the HDSI framework. Bootstrap resampling algorithm was developed by incorporating the two-way interaction terms into the model, FS criteria were determined based on pooled significance and model performance of each feature. The performances of the proposed algorithm were evaluated in simulation studies and implemented into a real-world dataset.
+
+**Results**: In the simulations, the HDSI-LASSO and HDSI-Ridge, on average, selected 3 out of 5 true marginal effects, and 1 out of 2 true interactive features. In the real-world study, HDSI- LASSO and HDSI-Ridge selected 7 and 66 out of 4950 interaction terms, respectively. Both algorithms showed good performance by selecting very few noisy features.
+
+Conclusions: The proposed HDSI algorithms show potential in identifying interactive effects, which consequently, increase the model performance. The HDSI-LASSO offers more robust performance regarding changes in the number of features, while HDSI-Ridge is preferable for lower dimension settings.
+
+## Materials
+- 2023-11-23 Fall [presentation](static/slides/5208present1116.html#1)
+
+- 2024-04-25 Winter presentation [slide deck](CHL5208_LinYu_winter_term0425.pdf)
+
+- 2024-08-15 My [final report](FinalReport_LinYu.pdf)
+
+
+
+

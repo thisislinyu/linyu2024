@@ -2,7 +2,9 @@
   {
     "listing": "/posts.html",
     "items": [
-      "/posts/2024-09-14-test/index.html"
+      "/posts/2023_08_22_workout_cheatsheet/index.html",
+      "/posts/2023_07_03scientific_research_writing/2023_07_03scientific_research_writing.html",
+      "/posts/2022-07-24-R-opencpu/index.html"
     ]
   },
   {
@@ -11,8 +13,9 @@
       "/DLSPH/CHL5260/index.html",
       "/DLSPH/CHL5208/index.html",
       "/DLSPH/CHL5209/index.html",
-      "/DLSPH/HAD7002/index.html",
-      "/DLSPH/Comps/index.html"
+      "/DLSPH/Comps/index.html",
+      "/DLSPH/STA2112:2212/2023_12_05_STA2112present.html",
+      "/DLSPH/HAD7002/index.html"
     ]
   }
 ]
