@@ -9,11 +9,11 @@ website:
     title: false # override printing your website `title` (e.g. "Sam Csik" on line 6) in the top left corner of your navbar
     # logo: logos/favicon.png
     right:
-      - href: index.qmd
-        text: Home
       # - about.qmd
       - DLSPH.qmd
       - posts.qmd
+      - href: index.qmd
+        text: Home
 
   page-footer:
     background: light # or `dark`
@@ -34,7 +34,7 @@ format:
     sidebar: false
     theme: 
       - styles.scss
-    mainfont: Nunito
+    mainfont: Josefin Sans
     toc: true
 
 editor: source

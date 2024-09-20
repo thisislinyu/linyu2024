@@ -1,5 +1,16 @@
 ---
-title: "CHL5260"
+title: "CHL5260 Seminar"
+description: |
+  
+author:
+  - name: Lin Yu
+    url: https://thisislinyu.github.io/
+date: 2022-07-04
+# date-modified: last-modified
+#bibliography: references.bib
+# categories: []
+image: seminar.PNG
+draft: false
 ---
 
 - First-term:[2024/02/29 CHL5260_concpet_proposal](2024_02_29_CHL5260_concpet_proposal.pdf)

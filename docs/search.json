@@ -4,7 +4,7 @@
     "href": "posts.html",
     "title": "Posts",
     "section": "",
-    "text": "workout cheat sheet\n\n\n\n\n\n\n\n\n\n\n\nAug 22, 2023\n\n\nLin\n\n\n\n\n\n\n\n\n\n\n\n\nScientific Research Writing\n\n\n\n\n\n\n\n\n\n\n\nJul 3, 2023\n\n\nLin\n\n\n\n\n\n\n\n\n\n\n\n\nR package test\n\n\n\n\n\n\nR\n\n\n\nwith opencpu \n\n\n\n\n\nJul 4, 2022\n\n\nLin Yu\n\n\n\n\n\n\nNo matching items"
+    "text": "workout cheat sheet\n\n\n\n\n\n\n\n\n\n\n\nAug 22, 2023\n\n\nLin Yu\n\n\n\n\n\n\n\n\n\n\n\n\nScientific Research Writing\n\n\n\n\n\n\n\n\n\n\n\nJul 3, 2023\n\n\nLin Yu\n\n\n\n\n\n\n\n\n\n\n\n\nR package test\n\n\n\n\n\n\nR\n\n\n\nwith opencpu \n\n\n\n\n\nJul 4, 2022\n\n\nLin Yu\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "DLSPH/HAD7002/index.html",
@@ -28,37 +28,16 @@
     "text": "Homework sets\n\nHW1\nHW2\nHW3\nHW4"
   },
   {
-    "objectID": "DLSPH/HAD7002/index.html#group-projects",
-    "href": "DLSPH/HAD7002/index.html#group-projects",
-    "title": "HAD7002 Causal Inference",
-    "section": "Group projects",
-    "text": "Group projects\n\nGroup presentation\nGroup project"
-  },
-  {
-    "objectID": "DLSPH/CHL5208/index.html",
-    "href": "DLSPH/CHL5208/index.html",
-    "title": "CHL5208 practicum course",
+    "objectID": "DLSPH/STA2112/2023_12_05_STA2112present.html",
+    "href": "DLSPH/STA2112/2023_12_05_STA2112present.html",
+    "title": "STA2112/STA2212",
     "section": "",
-    "text": "A special thanks to Dr. Xu for always supporting me throughout this project!"
-  },
-  {
-    "objectID": "DLSPH/CHL5208/index.html#summary-of-this-project",
-    "href": "DLSPH/CHL5208/index.html#summary-of-this-project",
-    "title": "CHL5208 practicum course",
-    "section": "Summary of this project",
-    "text": "Summary of this project\nBackground: Cancer survival analysis often confronts high-dimensional data. To allow the implementation of classical statistical modelling such as Cox regression in such setting, feature selection (FS) is commonly conducted before statistical modelling. However, existing algorithms do not often consider the interaction term and ignore the statistical significance of it, even though the interactive effect is of clinical interest in helping understand the complex relationships among variables and reveal potential heterogenous effect among individuals.\nObjectives: This study aimed to develop high-dimensional feature selection with interactions (HDSI) algorithms for time-to-event outcome that incorporates interactions in the high dimensional setting.\nMethods: Two algorithms, HDSI-LASSO and HDSI-Ridge were developed by incorporating Cox-LASSO and Cox-Ridge into the HDSI framework. Bootstrap resampling algorithm was developed by incorporating the two-way interaction terms into the model, FS criteria were determined based on pooled significance and model performance of each feature. The performances of the proposed algorithm were evaluated in simulation studies and implemented into a real-world dataset.\nResults: In the simulations, the HDSI-LASSO and HDSI-Ridge, on average, selected 3 out of 5 true marginal effects, and 1 out of 2 true interactive features. In the real-world study, HDSI- LASSO and HDSI-Ridge selected 7 and 66 out of 4950 interaction terms, respectively. Both algorithms showed good performance by selecting very few noisy features.\nConclusions: The proposed HDSI algorithms show potential in identifying interactive effects, which consequently, increase the model performance. The HDSI-LASSO offers more robust performance regarding changes in the number of features, while HDSI-Ridge is preferable for lower dimension settings."
-  },
-  {
-    "objectID": "DLSPH/CHL5208/index.html#materials",
-    "href": "DLSPH/CHL5208/index.html#materials",
-    "title": "CHL5208 practicum course",
-    "section": "Materials",
-    "text": "Materials\n\n2023-11-23 Fall presentation\n2024-04-25 Winter presentation slide deck\n2024-08-15 My final report"
+    "text": "多中心研究中需要考虑各中心数据隐私安全问题.之前有听过隐私计算,联邦学习等方法.这次读的文章提出一种one-shot的分布计算算法,主要思想是利用泰勒展开式表示出逻辑回归的log(似然函数),然后用前两阶的值去近似现在中心单位得到一个逻辑回归的最大似然估计的beta值,然后把beta值传给其他中心计算一阶导数和二阶导数.最后再传递回主中心得到一个近似的似然函数,然后argmax计算最终的beta估计值. - 原文章:Learning from electronic health records across multiple sites: A communication-efficient and privacy-preserving distributed algorithm - 我的幻灯片 - 非常有用的参考文献: - 「ODAL: A one-shot distributed algorithm to perform logistic regressions on electronic health records data from multiple clinical sites」 - 「Communication-Efficient Distributed Statistical Inference」\n\n2024-04-02 更新\n新增STA2212 final project. 这次我们选了Cox 1972年的发表的Regression Models and Life-Tables.主要介绍了KM，log-rank, Cox regression, 以及对cox regression 的PH assumption进行了讨论。\n- 我的幻灯片"
   },
   {
     "objectID": "DLSPH/CHL5260/index.html",
     "href": "DLSPH/CHL5260/index.html",
-    "title": "CHL5260",
+    "title": "CHL5260 Seminar",
     "section": "",
     "text": "First-term:2024/02/29 CHL5260_concpet_proposal"
   },
@@ -130,7 +109,7 @@
     "href": "DLSPH.html",
     "title": "DLSPH",
     "section": "",
-    "text": "CHL5260\n\n\n\n\n\n\nLin Yu\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCHL5208 practicum course\n\n\nslide decks of my practicum\n\n\n\nLin Yu\n\n\n\n\n\n\n\n\n\n\n\n\nCHL5209 Survival Analysis\n\n\n\n\n\n\nLin Yu\n\n\n\n\n\n\n\n\n\n\n\n\nComps\n\n\n\n\n\n\nLin Yu\n\n\n\n\n\n\n\n\n\n\n\n\nSTA2112/STA2212 Final Project Archive\n\n\n\n\n\n\nLin Yu, Lin\n\n\nDec 5, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nHAD7002 Causal Inference\n\n\n\n\n\n\nLin Yu\n\n\nJul 4, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "CHL5208 practicum course\n\n\nslide decks of my practicum\n\n\n\nLin Yu\n\n\n\n\n\n\n\n\n\n\n\n\nCHL5209 Survival Analysis\n\n\n\n\n\n\nLin Yu\n\n\n\n\n\n\n\n\n\n\n\n\nComps\n\n\n\n\n\n\nLin Yu\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCHL5225 Statistical Methods in Clinical Trials\n\n\ncourse notes\n\n\n\nLin Yu\n\n\n\n\n\n\n\n\n\n\n\n\nSTA2112/STA2212\n\n\n\n\n\n\nLin Yu, Lin Yu\n\n\nDec 5, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCHL5260 Seminar\n\n\n\n\n\n\nLin Yu\n\n\nJul 4, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHAD7002 Causal Inference\n\n\n\n\n\n\nLin Yu\n\n\nJul 4, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -140,11 +119,25 @@
     "text": "送你三千万:千万要健康🏃‍♀️,千万要快乐🌻,千万要幸福💕"
   },
   {
-    "objectID": "DLSPH/STA2112:2212/2023_12_05_STA2112present.html",
-    "href": "DLSPH/STA2112:2212/2023_12_05_STA2112present.html",
-    "title": "STA2112/STA2212 Final Project Archive",
+    "objectID": "DLSPH/CHL5208/index.html",
+    "href": "DLSPH/CHL5208/index.html",
+    "title": "CHL5208 practicum course",
     "section": "",
-    "text": "多中心研究中需要考虑各中心数据隐私安全问题.之前有听过隐私计算,联邦学习等方法.这次读的文章提出一种one-shot的分布计算算法,主要思想是利用泰勒展开式表示出逻辑回归的log(似然函数),然后用前两阶的值去近似现在中心单位得到一个逻辑回归的最大似然估计的beta值,然后把beta值传给其他中心计算一阶导数和二阶导数.最后再传递回主中心得到一个近似的似然函数,然后argmax计算最终的beta估计值. - 原文章:Learning from electronic health records across multiple sites: A communication-efficient and privacy-preserving distributed algorithm - 我的幻灯片 - 非常有用的参考文献: - 「ODAL: A one-shot distributed algorithm to perform logistic regressions on electronic health records data from multiple clinical sites」 - 「Communication-Efficient Distributed Statistical Inference」\n\n2024-04-02 更新\n新增STA2212 final project. 这次我们选了Cox 1972年的发表的Regression Models and Life-Tables.主要介绍了KM，log-rank, Cox regression, 以及对cox regression 的PH assumption进行了讨论。\n- 我的幻灯片"
+    "text": "A special thanks to Dr. Xu for always supporting me throughout this project!"
+  },
+  {
+    "objectID": "DLSPH/CHL5208/index.html#summary-of-this-project",
+    "href": "DLSPH/CHL5208/index.html#summary-of-this-project",
+    "title": "CHL5208 practicum course",
+    "section": "Summary of this project",
+    "text": "Summary of this project\nBackground: Cancer survival analysis often confronts high-dimensional data. To allow the implementation of classical statistical modelling such as Cox regression in such setting, feature selection (FS) is commonly conducted before statistical modelling. However, existing algorithms do not often consider the interaction term and ignore the statistical significance of it, even though the interactive effect is of clinical interest in helping understand the complex relationships among variables and reveal potential heterogenous effect among individuals.\nObjectives: This study aimed to develop high-dimensional feature selection with interactions (HDSI) algorithms for time-to-event outcome that incorporates interactions in the high dimensional setting.\nMethods: Two algorithms, HDSI-LASSO and HDSI-Ridge were developed by incorporating Cox-LASSO and Cox-Ridge into the HDSI framework. Bootstrap resampling algorithm was developed by incorporating the two-way interaction terms into the model, FS criteria were determined based on pooled significance and model performance of each feature. The performances of the proposed algorithm were evaluated in simulation studies and implemented into a real-world dataset.\nResults: In the simulations, the HDSI-LASSO and HDSI-Ridge, on average, selected 3 out of 5 true marginal effects, and 1 out of 2 true interactive features. In the real-world study, HDSI- LASSO and HDSI-Ridge selected 7 and 66 out of 4950 interaction terms, respectively. Both algorithms showed good performance by selecting very few noisy features.\nConclusions: The proposed HDSI algorithms show potential in identifying interactive effects, which consequently, increase the model performance. The HDSI-LASSO offers more robust performance regarding changes in the number of features, while HDSI-Ridge is preferable for lower dimension settings."
+  },
+  {
+    "objectID": "DLSPH/CHL5208/index.html#materials",
+    "href": "DLSPH/CHL5208/index.html#materials",
+    "title": "CHL5208 practicum course",
+    "section": "Materials",
+    "text": "Materials\n\n2023-11-23 Fall presentation\n2024-04-25 Winter presentation slide deck\n2024-08-15 My final report"
   },
   {
     "objectID": "DLSPH/CHL5209/index.html",
@@ -161,52 +154,45 @@
     "text": "Chapter 6 sufficient statistics\nChapter 7 point estimate\nChapter 8 hypothesis testing\nChapterf 9 interval estimation\nChapter 10 hypothesis testing\n\n\n\n\n\nProperties of MLE\nProperties of sample mean\nNormal sample mean\nNormal sample variance\nGeometric and negative binomial connection\nCLT proof\nDelta method\nMarkov chains; Stochastic process\nLinear regression\nOrder statistics\nT distribution\n2-dimensional normal PDF\nExponential family and location-scale\nUniform convolution\nGenerating random variables"
   },
   {
-    "objectID": "DLSPH/Comps/index.html#casella-notes",
-    "href": "DLSPH/Comps/index.html#casella-notes",
+    "objectID": "DLSPH/Comps/index.html#part-i",
+    "href": "DLSPH/Comps/index.html#part-i",
     "title": "Comps",
     "section": "",
-    "text": "Chapter 6 sufficient statistics\nChapter 7 point estimate\nChapter 8 hypothesis testing\nChapterf 9 interval estimation\nChapter 10 hypothesis testing"
+    "text": "Chapter 6 sufficient statistics\nChapter 7 point estimate\nChapter 8 hypothesis testing\nChapterf 9 interval estimation\nChapter 10 hypothesis testing\n\n\n\n\n\nProperties of MLE\nProperties of sample mean\nNormal sample mean\nNormal sample variance\nGeometric and negative binomial connection\nCLT proof\nDelta method\nMarkov chains; Stochastic process\nLinear regression\nOrder statistics\nT distribution\n2-dimensional normal PDF\nExponential family and location-scale\nUniform convolution\nGenerating random variables"
   },
   {
-    "objectID": "DLSPH/Comps/index.html#side-notes",
-    "href": "DLSPH/Comps/index.html#side-notes",
+    "objectID": "DLSPH/Comps/index.html#past-exams",
+    "href": "DLSPH/Comps/index.html#past-exams",
     "title": "Comps",
+    "section": "Past exams",
+    "text": "Past exams\n[TBD] ## Part III\n\nGithub repo\nReport"
+  },
+  {
+    "objectID": "DLSPH/Comps/index.html#reference-materials",
+    "href": "DLSPH/Comps/index.html#reference-materials",
+    "title": "Comps",
+    "section": "Reference materials",
+    "text": "Reference materials\n\n数理统计相关\n\nMathematical statistics by Keith Knight. [book], [solution]\n\nIntroduction to Probability Models by Sheldon M. Ross eleventh edition. [book]\n\nStatistical Inference by George Casella & Roger L. Berger second edition [book]\n\nAll of Statistics by Larry Wasserman[book]\n\n\n\n贝叶斯相关\n\nBayesian Data Analysis by Andrew Gelman, John B. Carlin and others third edition [book]. [lecture] by Aki Vehtari\n\n\n\nlarge sample 相关\n\nA Course in Large Sample Theory by Thomas S. Ferguson.[book]\n\n\n\n生物统计相关\n\nAgresti categorical data analysis [book][solution]."
+  },
+  {
+    "objectID": "DLSPH/CHL5225/index.html",
+    "href": "DLSPH/CHL5225/index.html",
+    "title": "CHL5225 Statistical Methods in Clinical Trials",
     "section": "",
-    "text": "Properties of MLE\nProperties of sample mean\nNormal sample mean\nNormal sample variance\nGeometric and negative binomial connection\nCLT proof\nDelta method\nMarkov chains; Stochastic process\nLinear regression\nOrder statistics\nT distribution\n2-dimensional normal PDF\nExponential family and location-scale\nUniform convolution\nGenerating random variables"
+    "text": "First introduced by Fisher, clinical trial is defined as\n\nprospective study comparing the effect and value of intervention(s) against a control in human beings\n\n\n\n\n\n\n\nintervention vs intervention strategies\n\n\n\n\n\nSince it may be impossible to have “pure” intervention and control groups, an investigator may not be able to compare interventions, but only intervention strategies. Strategies refer to attempts at getting all participants to adhere, to the best of their ability, to their originally assigned intervention\n\n\n\n\n\n\n\n\n\nclinical trial vs clinical studies\n\n\n\n\n\nPhase I/II trials may be controlled or uncontrolled, so they are also termed as clinical studies.\n\n\n\n\n\n\n\nStudy (descriptive/comparative) objectives\n\nBackground/patients\nIntervention(s)\nStudy design\n\nendpoint(s)\n\nPrimary\nSecondary\n\nSample size and power"
   },
   {
-    "objectID": "DLSPH/Comps/index.html#数理统计相关",
-    "href": "DLSPH/Comps/index.html#数理统计相关",
-    "title": "Comps",
-    "section": "数理统计相关",
-    "text": "数理统计相关\n\nMathematical statistics by Keith Knight. [book], [solution]\n\nIntroduction to Probability Models by Sheldon M. Ross eleventh edition. [book]\n\nStatistical Inference by George Casella & Roger L. Berger second edition [book]\n\nAll of Statistics by Larry Wasserman[book]"
+    "objectID": "DLSPH/CHL5225/index.html#week-1-overview-of-clinical-trials",
+    "href": "DLSPH/CHL5225/index.html#week-1-overview-of-clinical-trials",
+    "title": "CHL5225 Statistical Methods in Clinical Trials",
+    "section": "",
+    "text": "First introduced by Fisher, clinical trial is defined as\n\nprospective study comparing the effect and value of intervention(s) against a control in human beings\n\n\n\n\n\n\n\nintervention vs intervention strategies\n\n\n\n\n\nSince it may be impossible to have “pure” intervention and control groups, an investigator may not be able to compare interventions, but only intervention strategies. Strategies refer to attempts at getting all participants to adhere, to the best of their ability, to their originally assigned intervention\n\n\n\n\n\n\n\n\n\nclinical trial vs clinical studies\n\n\n\n\n\nPhase I/II trials may be controlled or uncontrolled, so they are also termed as clinical studies.\n\n\n\n\n\n\n\nStudy (descriptive/comparative) objectives\n\nBackground/patients\nIntervention(s)\nStudy design\n\nendpoint(s)\n\nPrimary\nSecondary\n\nSample size and power"
   },
   {
-    "objectID": "DLSPH/Comps/index.html#贝叶斯相关",
-    "href": "DLSPH/Comps/index.html#贝叶斯相关",
-    "title": "Comps",
-    "section": "贝叶斯相关",
-    "text": "贝叶斯相关\n\nBayesian Data Analysis by Andrew Gelman, John B. Carlin and others third edition [book]. [lecture] by Aki Vehtari"
-  },
-  {
-    "objectID": "DLSPH/Comps/index.html#large-sample-相关",
-    "href": "DLSPH/Comps/index.html#large-sample-相关",
-    "title": "Comps",
-    "section": "large sample 相关",
-    "text": "large sample 相关\n\nA Course in Large Sample Theory by Thomas S. Ferguson.[book]"
-  },
-  {
-    "objectID": "DLSPH/Comps/index.html#生存分析相关",
-    "href": "DLSPH/Comps/index.html#生存分析相关",
-    "title": "Comps",
-    "section": "生存分析相关",
-    "text": "生存分析相关"
-  },
-  {
-    "objectID": "DLSPH/Comps/index.html#生物统计相关",
-    "href": "DLSPH/Comps/index.html#生物统计相关",
-    "title": "Comps",
-    "section": "生物统计相关",
-    "text": "生物统计相关\n\nAgresti categorical data analysis [book][solution]."
+    "objectID": "DLSPH/CHL5225/index.html#week-2-early-phase-trials",
+    "href": "DLSPH/CHL5225/index.html#week-2-early-phase-trials",
+    "title": "CHL5225 Statistical Methods in Clinical Trials",
+    "section": "Week 2: Early Phase Trials",
+    "text": "Week 2: Early Phase Trials\n\nDose finding studies\nPhase I trials includes initial introduction of an investigational new drug into humans, designed to determine the metabolic and pharmacologic actions of the drug in humans, the side effects associated with increasing doses, and, if possible, to gain early evidence on effectiveness\n\nTo determine the maximum tolerated dose (MTD) for the agent\n\nMonotonicity assumption:\n\nToxicity level increases with dose\nEfficacy increase with dose\n\n\n\n\n\n\n\nDose Limiting Toxicity (DLT)\n\n\n\n\n\nBad side effect(s) defined by clinicians\n\n\n\nMethods to find MTD\n\nRule-based (3+3) designs\nContinual reassessment method (CRM)\nBayesian Optimal Interval Design (BOIN) design\n\n\n\nPilot / feasibility studies\nto test the feasibility of methods and procedures for later use on a large scale or to search for possible effects and associations that may be worth following up in a subsequent larger study"
   }
 ]

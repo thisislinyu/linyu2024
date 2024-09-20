@@ -2,59 +2,59 @@
 title: "Comps"
 ---
 
-# Part I
+## Part I
 
-## Casella notes
+### Casella notes
 
-- [Chapter 6 sufficient statistics](Chapter 6 sufficient statistics.pdf)
-- [Chapter 7 point estimate](Chapter 7 point estimate.pdf)
-- [Chapter 8 hypothesis testing](Chapter 8 hypothesis testing.pdf)
-- [Chapterf 9 interval estimation](Chapter 9 interval estimation.pdf)
-- [Chapter 10 hypothesis testing](Chapter 10 hypothesis testing.pdf)
+-   [Chapter 6 sufficient statistics](Chapter%206%20sufficient%20statistics.pdf)
+-   [Chapter 7 point estimate](Chapter%207%20point%20estimate.pdf)
+-   [Chapter 8 hypothesis testing](Chapter%208%20hypothesis%20testing.pdf)
+-   [Chapterf 9 interval estimation](Chapter%209%20interval%20estimation.pdf)
+-   [Chapter 10 hypothesis testing](Chapter%2010%20hypothesis%20testing.pdf)
 
-## Side notes
+### Side notes
 
-- [Properties of MLE](MLE.pdf)
-- [Properties of sample mean](sample mean properties.pdf)
-- [Normal sample mean](Normal sample mean.pdf)
-- [Normal sample variance](Normal sample variance.pdf)
-- [Geometric and negative binomial connection](Geometric and negative binomial.pdf)
-- [CLT proof](CLT proof.pdf)
-- [Delta method](Delta method.pdf)
-- [Markov chains](Markov chains.pdf); [Stochastic process](Stochastic process.pdf)
-- [Linear regression](Linear regression.pdf)
-- [Order statistics](Order statistics.pdf)
-- [T distribution](T distribution.pdf)
-- [2-dimensional normal PDF](2-dimensional normal PDF.pdf)
-- [Exponential family and location-scale](Exponential family and location-scale.pdf)
-- [Uniform convolution](Uniform convolution.pdf)
-- [Generating random variables](Generating random variables.pdf)
+-   [Properties of MLE](MLE.pdf)
+-   [Properties of sample mean](sample%20mean%20properties.pdf)
+-   [Normal sample mean](Normal%20sample%20mean.pdf)
+-   [Normal sample variance](Normal%20sample%20variance.pdf)
+-   [Geometric and negative binomial connection](Geometric%20and%20negative%20binomial.pdf)
+-   [CLT proof](CLT%20proof.pdf)
+-   [Delta method](Delta%20method.pdf)
+-   [Markov chains](Markov%20chains.pdf); [Stochastic process](Stochastic%20process.pdf)
+-   [Linear regression](Linear%20regression.pdf)
+-   [Order statistics](Order%20statistics.pdf)
+-   [T distribution](T%20distribution.pdf)
+-   [2-dimensional normal PDF](2-dimensional%20normal%20PDF.pdf)
+-   [Exponential family and location-scale](Exponential%20family%20and%20location-scale.pdf)
+-   [Uniform convolution](Uniform%20convolution.pdf)
+-   [Generating random variables](Generating%20random%20variables.pdf)
 
 ## Past exams
+[TBD]
+## Part III
 
-# Part II
+-   [Github repo](https://github.com/thisislinyu/2024PARTIII)
 
-# Part III
+-   [Report](Part%20III%20Report.pdf)
 
-- [Github repo](https://github.com/thisislinyu/2024PARTIII)
+## Reference materials
 
-- [Report](Part III Report.pdf)
+### 数理统计相关
 
-# Reference materials
+1.  Mathematical statistics by Keith Knight. [\[book\]](books/mathematical_statistics.pdf), [\[solution\]](books/Mathematical_Statistics_solution.pdf)\
+2.  Introduction to Probability Models by Sheldon M. Ross eleventh edition. [\[book\]](books/introduction_to_probability.pdf)\
+3.  Statistical Inference by George Casella & Roger L. Berger second edition [\[book\]](books/statistical_inference.pdf)\
+4.  All of Statistics by Larry Wasserman[\[book\]](books/all_of_statistics.pdf)
 
-## 数理统计相关
-1. Mathematical statistics by Keith Knight. [\[book\]](books/mathematical_statistics.pdf), [\[solution\]](books/Mathematical_Statistics_solution.pdf)          
-2. Introduction to Probability Models by Sheldon M. Ross eleventh edition. [\[book\]](books/introduction_to_probability.pdf)      
-3. Statistical Inference by George Casella & Roger L. Berger second edition  [\[book\]](books/statistical_inference.pdf)       
-4. All of Statistics by Larry       Wasserman[\[book\]](books/all_of_statistics.pdf)     
+### 贝叶斯相关
 
-## 贝叶斯相关            
-1. Bayesian Data Analysis by Andrew Gelman, John B. Carlin and others third edition [\[book\]](books/bayesian_data_analysis.pdf).  [\[lecture\]](https://avehtari.github.io/BDA_course_Aalto/)   by Aki Vehtari  
+1.  Bayesian Data Analysis by Andrew Gelman, John B. Carlin and others third edition [\[book\]](books/bayesian_data_analysis.pdf). [\[lecture\]](https://avehtari.github.io/BDA_course_Aalto/) by Aki Vehtari
 
-## large sample 相关
-1. A Course in Large Sample Theory by Thomas S. Ferguson.[\[book\]](books/a_course_in_large_sample_theory.pdf)
+### large sample 相关
 
-## 生存分析相关
+1.  A Course in Large Sample Theory by Thomas S. Ferguson.[\[book\]](books/a_course_in_large_sample_theory.pdf)
 
-## 生物统计相关
-1. Agresti categorical data analysis [\[book\]](books/AGRESTI_categorical_data_analysis_2nd.pdf)[\[solution\]](books/agresti_2nded_solutions_odd.pdf).
+### 生物统计相关
+
+1.  Agresti categorical data analysis [\[book\]](books/AGRESTI_categorical_data_analysis_2nd.pdf)[\[solution\]](books/agresti_2nded_solutions_odd.pdf).

@@ -15,16 +15,12 @@ draft: false
 
 ## Course notes
 
--  [W3: standardization](HAD7002_week3_summary.pdf)
-- [W7: effect decomposition](HAD7002_week7_summary.pdf)
+-   [W3: standardization](HAD7002_week3_summary.pdf)
+-   [W7: effect decomposition](HAD7002_week7_summary.pdf)
 
 ## Homework sets
 
-- [HW1](HAD7002_HW1.pdf)
-- [HW2](HAD7002_HW2.pdf)
-- [HW3](HAD7002_HW3.pdf)
-- [HW4](HAD7002_HW4.pdf)
-
-## Group projects
-- [Group presentation](HAD7002_pre_June18.pdf)
-- [Group project](HAD7002_Group_Project.pdf)
+-   [HW1](HAD7002_HW1.pdf)
+-   [HW2](HAD7002_HW2.pdf)
+-   [HW3](HAD7002_HW3.pdf)
+-   [HW4](HAD7002_HW4.pdf)

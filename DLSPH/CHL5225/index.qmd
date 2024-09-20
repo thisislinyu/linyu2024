@@ -1,0 +1,10 @@
+---
+title: "CHL5225 Statistical Methods in Clinical Trials"
+description: |
+  course notes
+  
+image: rct.PNG      
+draft: false
+---
+
+{{< include /DLSPH/CHL5225/sections/1-introduction-to-RCT.qmd >}}

@@ -1,0 +1,73 @@
+---
+draft: true
+---
+
+## Week 1: Overview of Clinical Trials
+
+### What is a Clinical Trial?
+
+First introduced by Fisher, clinical trial is defined as
+
+> **prospective study** comparing the effect and value of **intervention(s)** against a **control** in **human beings**
+
+::: {.callout-note collapse="true"}
+## **intervention** vs **intervention strategies**
+
+Since it may be impossible to have "pure" intervention and control groups, an investigator may not be able to compare interventions, but only intervention strategies. Strategies refer to attempts at getting all participants to adhere, to the best of their ability, to their originally assigned intervention
+:::
+
+::: {.callout-note collapse="true"}
+## **clinical trial** vs **clinical studies**
+
+Phase I/II trials may be controlled or uncontrolled, so they are also termed as clinical studies.
+:::
+
+### Statistical Considerations for Clinical Trials
+
+-   Study (descriptive/comparative) objectives
+
+    -   Background/patients
+
+    -   Intervention(s)
+
+    -   Study design
+
+-   endpoint(s)
+
+    -   Primary
+
+    -   Secondary
+
+-   Sample size and power
+
+## Week 2: Early Phase Trials
+
+### Dose finding studies
+
+Phase I trials includes **initial introduction** of an investigational new drug into humans, designed to determine the **metabolic and pharmacologic actions** of the drug in humans, the **side effects** associated with increasing doses, and, if possible, to gain early evidence on effectiveness
+
+> To determine the maximum tolerated dose (MTD) for the agent
+
+Monotonicity assumption:
+
+-   Toxicity level increases with dose
+
+-   Efficacy increase with dose
+
+::: {.callout-note collapse="true"}
+## **Dose Limiting Toxicity (DLT)**
+
+Bad side effect(s) defined by clinicians
+:::
+
+Methods to find MTD
+
+-   Rule-based (3+3) designs
+
+-   Continual reassessment method (CRM)
+
+-   Bayesian Optimal Interval Design (BOIN) design
+
+### Pilot / feasibility studies
+
+to test the **feasibility of methods and procedures** for later use on a large scale or to search for possible effects and associations that may be worth following up in a subsequent larger study

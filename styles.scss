@@ -1,7 +1,15 @@
 /*-- scss:defaults --*/
 
 // Import Google fonts
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+// fonts
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-family-serif: 'Sanchez', serif;
+$font-family-monospace: 'Roboto Mono', monospace;
 
 
 // Nature-inspired Colors
@@ -28,10 +36,18 @@ $code-color: $muted-olive; // inline code text color
 
 /*-- scss:rules --*/
 
-h1, h2 {
-  letter-spacing: 5px;
-  font-weight: 800;
+// header font & color
+h1, h2, h3, h4 {
+  color: $dark-green;
 }
+
+// line beneath h2
+h2 {
+  border-bottom: 3px solid $dark-green;
+  padding-bottom: 0.5rem;
+}
+
+
 
 .title {
   color: $burnt-orange; // Change title color to burnt orange

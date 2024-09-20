@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Lin">
-<meta name="dcterms.date" content="2023-12-05">
+<meta name="author" content="Lin Yu">
+<meta name="description" content="course notes">
 
-<title>Lin Yu - STA2112/STA2212 Final Project Archive</title>
+<title>Lin Yu - CHL5225 Statistical Methods in Clinical Trials</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -87,16 +87,16 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../../DLSPH.html"> 
 <span class="menu-text">DLSPH</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../posts.html"> 
 <span class="menu-text">Posts</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -109,8 +109,13 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page-left">
-      <h1 class="title">STA2112/STA2212 Final Project Archive</h1>
-                      </div>
+      <h1 class="title">CHL5225 Statistical Methods in Clinical Trials</h1>
+                  <div>
+        <div class="description">
+          <p>course notes</p>
+        </div>
+      </div>
+                </div>
   </div>
     
   
@@ -119,16 +124,10 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Lin </p>
+               <p><a href="https://thisislinyu.github.io/">Lin Yu</a> </p>
             </div>
     </div>
       
-      <div>
-      <div class="quarto-title-meta-heading">Published</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">December 5, 2023</p>
-      </div>
-    </div>
     
       
     </div>
@@ -142,7 +141,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#更新" id="toc-更新" class="nav-link active" data-scroll-target="#更新">2024-04-02 更新</a></li>
+  <li><a href="#week-1-overview-of-clinical-trials" id="toc-week-1-overview-of-clinical-trials" class="nav-link active" data-scroll-target="#week-1-overview-of-clinical-trials">Week 1: Overview of Clinical Trials</a>
+  <ul class="collapse">
+  <li><a href="#what-is-a-clinical-trial" id="toc-what-is-a-clinical-trial" class="nav-link" data-scroll-target="#what-is-a-clinical-trial">What is a Clinical Trial?</a></li>
+  <li><a href="#statistical-considerations-for-clinical-trials" id="toc-statistical-considerations-for-clinical-trials" class="nav-link" data-scroll-target="#statistical-considerations-for-clinical-trials">Statistical Considerations for Clinical Trials</a></li>
+  </ul></li>
+  <li><a href="#week-2-early-phase-trials" id="toc-week-2-early-phase-trials" class="nav-link" data-scroll-target="#week-2-early-phase-trials">Week 2: Early Phase Trials</a>
+  <ul class="collapse">
+  <li><a href="#dose-finding-studies" id="toc-dose-finding-studies" class="nav-link" data-scroll-target="#dose-finding-studies">Dose finding studies</a></li>
+  <li><a href="#pilot-feasibility-studies" id="toc-pilot-feasibility-studies" class="nav-link" data-scroll-target="#pilot-feasibility-studies">Pilot / feasibility studies</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -153,13 +161,107 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>多中心研究中需要考虑各中心数据隐私安全问题.之前有听过隐私计算,联邦学习等方法.这次读的文章提出一种one-shot的分布计算算法,主要思想是利用泰勒展开式表示出逻辑回归的log(似然函数),然后用前两阶的值去近似现在中心单位得到一个逻辑回归的最大似然估计的beta值,然后把beta值传给其他中心计算一阶导数和二阶导数.最后再传递回主中心得到一个近似的似然函数,然后argmax计算最终的beta估计值. - 原文章:<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7025371/pdf/ocz199.pdf">Learning from electronic health records across multiple sites: A communication-efficient and privacy-preserving distributed algorithm</a> - 我的<a href="https://lin-yu.me/pdfs/2023_12_05LinYu_results_conclusion.pdf">幻灯片</a> - 非常有用的参考文献: - <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6417819/pdf/nihms-999765.pdf">「ODAL: A one-shot distributed algorithm to perform logistic regressions on electronic health records data from multiple clinical sites」</a> - <a href="https://www.tandfonline.com/doi/abs/10.1080/01621459.2018.1429274">「Communication-Efficient Distributed Statistical Inference」</a></p>
-<section id="更新" class="level3">
-<h3 class="anchored" data-anchor-id="更新">2024-04-02 更新</h3>
-<p>新增STA2212 final project. 这次我们选了Cox 1972年的发表的Regression Models and Life-Tables.主要介绍了KM，log-rank, Cox regression, 以及对cox regression 的PH assumption进行了讨论。<br>
-- 我的<a href="https://lin-yu.me/pdfs/2024_04_02_STA2212_Cox_1972_final_project.pdf">幻灯片</a></p>
+<section id="week-1-overview-of-clinical-trials" class="level2">
+<h2 class="anchored" data-anchor-id="week-1-overview-of-clinical-trials">Week 1: Overview of Clinical Trials</h2>
+<section id="what-is-a-clinical-trial" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-a-clinical-trial">What is a Clinical Trial?</h3>
+<p>First introduced by Fisher, clinical trial is defined as</p>
+<blockquote class="blockquote">
+<p><strong>prospective study</strong> comparing the effect and value of <strong>intervention(s)</strong> against a <strong>control</strong> in <strong>human beings</strong></p>
+</blockquote>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>intervention</strong> vs <strong>intervention strategies</strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Since it may be impossible to have “pure” intervention and control groups, an investigator may not be able to compare interventions, but only intervention strategies. Strategies refer to attempts at getting all participants to adhere, to the best of their ability, to their originally assigned intervention</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>clinical trial</strong> vs <strong>clinical studies</strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Phase I/II trials may be controlled or uncontrolled, so they are also termed as clinical studies.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="statistical-considerations-for-clinical-trials" class="level3">
+<h3 class="anchored" data-anchor-id="statistical-considerations-for-clinical-trials">Statistical Considerations for Clinical Trials</h3>
+<ul>
+<li><p>Study (descriptive/comparative) objectives</p>
+<ul>
+<li><p>Background/patients</p></li>
+<li><p>Intervention(s)</p></li>
+<li><p>Study design</p></li>
+</ul></li>
+<li><p>endpoint(s)</p>
+<ul>
+<li><p>Primary</p></li>
+<li><p>Secondary</p></li>
+</ul></li>
+<li><p>Sample size and power</p></li>
+</ul>
+</section>
+</section>
+<section id="week-2-early-phase-trials" class="level2">
+<h2 class="anchored" data-anchor-id="week-2-early-phase-trials">Week 2: Early Phase Trials</h2>
+<section id="dose-finding-studies" class="level3">
+<h3 class="anchored" data-anchor-id="dose-finding-studies">Dose finding studies</h3>
+<p>Phase I trials includes <strong>initial introduction</strong> of an investigational new drug into humans, designed to determine the <strong>metabolic and pharmacologic actions</strong> of the drug in humans, the <strong>side effects</strong> associated with increasing doses, and, if possible, to gain early evidence on effectiveness</p>
+<blockquote class="blockquote">
+<p>To determine the maximum tolerated dose (MTD) for the agent</p>
+</blockquote>
+<p>Monotonicity assumption:</p>
+<ul>
+<li><p>Toxicity level increases with dose</p></li>
+<li><p>Efficacy increase with dose</p></li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>Dose Limiting Toxicity (DLT)</strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Bad side effect(s) defined by clinicians</p>
+</div>
+</div>
+</div>
+<p>Methods to find MTD</p>
+<ul>
+<li><p>Rule-based (3+3) designs</p></li>
+<li><p>Continual reassessment method (CRM)</p></li>
+<li><p>Bayesian Optimal Interval Design (BOIN) design</p></li>
+</ul>
+</section>
+<section id="pilot-feasibility-studies" class="level3">
+<h3 class="anchored" data-anchor-id="pilot-feasibility-studies">Pilot / feasibility studies</h3>
+<p>to test the <strong>feasibility of methods and procedures</strong> for later use on a large scale or to search for possible effects and associations that may be worth following up in a subsequent larger study</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
