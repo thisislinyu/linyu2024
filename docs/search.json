@@ -4,7 +4,7 @@
     "href": "posts.html",
     "title": "Posts",
     "section": "",
-    "text": "Workout Cheatsheet\n\n\n\n\n\n死虫、提踵动作要点 \n\n\n\n\n\nAug 22, 2023\n\n\nLin Yu\n\n\n\n\n\n\n\n\n\n\n\n\nScientific Research Writing\n\n\n\n\n\nreading notes \n\n\n\n\n\nJul 3, 2023\n\n\nLin Yu\n\n\n\n\n\n\n\n\n\n\n\n\nScientific Research Writing\n\n\n\n\n\n\n\n\n\n\n\nJul 3, 2023\n\n\nLin Yu\n\n\n\n\n\n\n\n\n\n\n\n\nR package test\n\n\n\n\n\nwith opencpu \n\n\n\n\n\nJul 4, 2022\n\n\nLin Yu\n\n\n\n\n\n\nNo matching items"
+    "text": "Workout Cheatsheet\n\n\n\n\n\n死虫、提踵动作要点 \n\n\n\n\n\nAug 22, 2023\n\n\nLin Yu\n\n\n\n\n\n\n\n\n\n\n\n\nScientific Research Writing\n\n\n\n\n\nreading notes \n\n\n\n\n\nJul 3, 2023\n\n\nLin Yu\n\n\n\n\n\n\n\n\n\n\n\n\nR package test\n\n\n\n\n\nwith opencpu \n\n\n\n\n\nJul 4, 2022\n\n\nLin Yu\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "DLSPH/HAD7002/index.html",
@@ -63,34 +63,6 @@
     "text": "送你三千万:千万要健康🏃‍♀️,千万要快乐🌻,千万要幸福💕"
   },
   {
-    "objectID": "posts/2022-07-24-R-opencpu/index.html",
-    "href": "posts/2022-07-24-R-opencpu/index.html",
-    "title": "R package test",
-    "section": "",
-    "text": "Step 1: set up server\n\n\nStep 2: 制作docker镜像\n可以理解为将需要的文件进行组合打包。主要利用dockerfile进行制作（安装opencpu, R package等）\n\n\nStep 3: 上传所需要的文件（如R包，数据 etc.)到容器内\n将制作好的R包(制作R包可参考这里)上传到服务器，并将其复制到对应的docker内部。可以利用FTP（File Transfer Protocol）工具来进行上传，上传完毕后安装R包。\n\n\n\nStep 4: 测试R包\n提供接口 URL＋API参数，对 R function(R API) 进行测试,可以利用以下几种工具进行测试： - 利用接口测试工具（如 Postman） - 或者可以利用 Python 的 requests 进行 API 测试； - 或者利用curl命令进行测试\n\n\nStep 5: 提交R包(其他部门测试等)"
-  },
-  {
-    "objectID": "posts/2023_08_22_workout_cheatsheet/index.html",
-    "href": "posts/2023_08_22_workout_cheatsheet/index.html",
-    "title": "Workout Cheatsheet",
-    "section": "",
-    "text": "先自然平躺，脚尖向前，屈膝，夹球，膝盖尽量靠近胸\n在保证腰始终压住地面的情况下，缓慢使大腿与地面垂直，小腿与地面平行，钩脚尖\n双手手心向内，伸直与地面垂直，肩胛骨稍往上提，背部胸腔打开\n吸气到背部胸腔处，呼气用内收肌夹小球\n保持至内收肌酸痛感（2min左右）\n\n\n\n\n\n先保持静态死虫姿势\n腰部放毛巾 感受腰部往下死劲压的感觉，吸气\n呼气，大腿根部蹬伸出去，保持住腰部往下压\n蹬伸至腰部快有空隙时，吸气，再呼气收回双腿\n至力竭\n\n\n\n\n\n自然平躺，屈膝保持脚尖向前，拇指球轻轻压住地面，夹小球\n双手掌心朝下，自然放在身体两侧\n吸气，呼气时收肚子，骨盆回卷，向上发力带动腰椎，胸椎脱离地面\n至最高处后慢慢下落，先放胸椎，再放腰椎，最后是屁股\n重复10个\n\n臀桥动作注意点：\n\n观察脚尖是否向前\n拇指球始终压住地面\n臀部发力\n\n动作1-3为一组，可做完一组休息，共三组\n\n\n\n\n\n\n自然平躺，双腿自然抬起并屈膝，大腿与地面垂直，小腿与地面平行，双手向前伸，掌心向内\n吸气，呼气同时腹部发力，带动腰和胸远离地面，使手延伸至膝盖内侧\n吸气有控制的慢慢放回\n呼气重复步骤2-3，至力竭\n\n\n\n\n\n自然平躺在瑜伽垫上，双脚自然打开踩住地面\n双手抓住瑜伽垫的两角，吸气，呼气手臂和腹部用力，背部贴住瑜伽垫，使身体向上\n吸气缓缓下落\n呼气重复动作2-3，至力竭\n\n\n\n\n\n自然平躺，屈膝，双手抱住大腿后侧\n吸气，呼气的同时手臂和腹部用力，使腰尽力远离地面\n吸气慢慢有控制放回\n呼气重复步骤2-3，至力竭\n\n卷腹动作注意点：注意力集中在腹部，尽量避免颈部发力"
-  },
-  {
-    "objectID": "posts/2023_08_22_workout_cheatsheet/index.html#卧姿动作",
-    "href": "posts/2023_08_22_workout_cheatsheet/index.html#卧姿动作",
-    "title": "Workout Cheatsheet",
-    "section": "",
-    "text": "先自然平躺，脚尖向前，屈膝，夹球，膝盖尽量靠近胸\n在保证腰始终压住地面的情况下，缓慢使大腿与地面垂直，小腿与地面平行，钩脚尖\n双手手心向内，伸直与地面垂直，肩胛骨稍往上提，背部胸腔打开\n吸气到背部胸腔处，呼气用内收肌夹小球\n保持至内收肌酸痛感（2min左右）\n\n\n\n\n\n先保持静态死虫姿势\n腰部放毛巾 感受腰部往下死劲压的感觉，吸气\n呼气，大腿根部蹬伸出去，保持住腰部往下压\n蹬伸至腰部快有空隙时，吸气，再呼气收回双腿\n至力竭\n\n\n\n\n\n自然平躺，屈膝保持脚尖向前，拇指球轻轻压住地面，夹小球\n双手掌心朝下，自然放在身体两侧\n吸气，呼气时收肚子，骨盆回卷，向上发力带动腰椎，胸椎脱离地面\n至最高处后慢慢下落，先放胸椎，再放腰椎，最后是屁股\n重复10个\n\n臀桥动作注意点：\n\n观察脚尖是否向前\n拇指球始终压住地面\n臀部发力\n\n动作1-3为一组，可做完一组休息，共三组\n\n\n\n\n\n\n自然平躺，双腿自然抬起并屈膝，大腿与地面垂直，小腿与地面平行，双手向前伸，掌心向内\n吸气，呼气同时腹部发力，带动腰和胸远离地面，使手延伸至膝盖内侧\n吸气有控制的慢慢放回\n呼气重复步骤2-3，至力竭\n\n\n\n\n\n自然平躺在瑜伽垫上，双脚自然打开踩住地面\n双手抓住瑜伽垫的两角，吸气，呼气手臂和腹部用力，背部贴住瑜伽垫，使身体向上\n吸气缓缓下落\n呼气重复动作2-3，至力竭\n\n\n\n\n\n自然平躺，屈膝，双手抱住大腿后侧\n吸气，呼气的同时手臂和腹部用力，使腰尽力远离地面\n吸气慢慢有控制放回\n呼气重复步骤2-3，至力竭\n\n卷腹动作注意点：注意力集中在腹部，尽量避免颈部发力"
-  },
-  {
-    "objectID": "posts/2023_08_22_workout_cheatsheet/index.html#站姿动作",
-    "href": "posts/2023_08_22_workout_cheatsheet/index.html#站姿动作",
-    "title": "Workout Cheatsheet",
-    "section": "站姿动作",
-    "text": "站姿动作\n\n 动作5 单腿提踵\n\n靠墙20cm站立，双腿自然打开，脚尖向前，双脚平行，拇指球压紧地面，脚趾头自然放松，双手微微扶墙\n双腿伸直，一只脚抬起远离地面\n吸气，呼气，拇指球用力，向上提踵至最高处\n吸气，再有控制地放下，并在压住拇指球的情况下 保证脚跟外侧先着地\n脚跟快接触地面时，呼气继续提踵，重复步骤3-4\n单侧提踵20次 换脚\n提踵3组后拉伸小腿，1min左右，有拉伸感即可\n\n站姿提踵动作注意点：\n\n脚尖向前，脚伸直\n下落时保证拇指球踩稳地面，脚趾放松\n落地时脚跟外侧先靠近地面，但不要画圈\n收下巴\n\n\n\n动作6 站姿髋外旋保持\n\n双腿打开，自然站立，保持脚尖向前，拇指球压住，脚跟压住\n骨盆回卷，收小腹，\n重心放在脚跟外侧，膝盖外旋，带动臀部收紧\n拉伸：大小腿呈90度，对侧肩膀往膝盖靠，感受屁股拉伸感"
-  },
-  {
     "objectID": "posts/2023_07_03scientific_research_writing/index.html",
     "href": "posts/2023_07_03scientific_research_writing/index.html",
     "title": "Scientific Research Writing",
@@ -117,6 +89,34 @@
     "title": "Scientific Research Writing",
     "section": "Results",
     "text": "Results\n\ntime sequence\n\nBefore the beginning: beforehand; earlier; formerly; in advance; originally; previously; prior to.\nAt the beginning/first step: at first; at the beginning; at the start; firstly; in the beginning; initially; to begin with; to start with.\nSteps/order: after, afterwards,earlier; next; once; previously; prior to; secondly; subsequently; then.\nAfter a short while: before long; shortly after; soon.\nAt a late/later stage; after a while/longer period: eventually; in time; later; later on; subsequently; towards the end.\nOne point/period occurring almost or exactly at the same time as another: as; as soon as; at that point; at the same time; immediately; in the meantime; just then; meanwhile; simultaneously; straight away; upon+ing; when; while.\nAt the end/last step: at the end; eventually; finally; lastly.\nAfter the end: afterwards; eventually; in the end; later; later on.\n\n\n\nFrequency"
+  },
+  {
+    "objectID": "posts/2023_08_22_workout_cheatsheet/index.html",
+    "href": "posts/2023_08_22_workout_cheatsheet/index.html",
+    "title": "Workout Cheatsheet",
+    "section": "",
+    "text": "先自然平躺，脚尖向前，屈膝，夹球，膝盖尽量靠近胸\n在保证腰始终压住地面的情况下，缓慢使大腿与地面垂直，小腿与地面平行，钩脚尖\n双手手心向内，伸直与地面垂直，肩胛骨稍往上提，背部胸腔打开\n吸气到背部胸腔处，呼气用内收肌夹小球\n保持至内收肌酸痛感（2min左右）\n\n\n\n\n\n先保持静态死虫姿势\n腰部放毛巾 感受腰部往下死劲压的感觉，吸气\n呼气，大腿根部蹬伸出去，保持住腰部往下压\n蹬伸至腰部快有空隙时，吸气，再呼气收回双腿\n至力竭\n\n\n\n\n\n自然平躺，屈膝保持脚尖向前，拇指球轻轻压住地面，夹小球\n双手掌心朝下，自然放在身体两侧\n吸气，呼气时收肚子，骨盆回卷，向上发力带动腰椎，胸椎脱离地面\n至最高处后慢慢下落，先放胸椎，再放腰椎，最后是屁股\n重复10个\n\n臀桥动作注意点：\n\n观察脚尖是否向前\n拇指球始终压住地面\n臀部发力\n\n动作1-3为一组，可做完一组休息，共三组\n\n\n\n\n\n\n自然平躺，双腿自然抬起并屈膝，大腿与地面垂直，小腿与地面平行，双手向前伸，掌心向内\n吸气，呼气同时腹部发力，带动腰和胸远离地面，使手延伸至膝盖内侧\n吸气有控制的慢慢放回\n呼气重复步骤2-3，至力竭\n\n\n\n\n\n自然平躺在瑜伽垫上，双脚自然打开踩住地面\n双手抓住瑜伽垫的两角，吸气，呼气手臂和腹部用力，背部贴住瑜伽垫，使身体向上\n吸气缓缓下落\n呼气重复动作2-3，至力竭\n\n\n\n\n\n自然平躺，屈膝，双手抱住大腿后侧\n吸气，呼气的同时手臂和腹部用力，使腰尽力远离地面\n吸气慢慢有控制放回\n呼气重复步骤2-3，至力竭\n\n卷腹动作注意点：注意力集中在腹部，尽量避免颈部发力"
+  },
+  {
+    "objectID": "posts/2023_08_22_workout_cheatsheet/index.html#卧姿动作",
+    "href": "posts/2023_08_22_workout_cheatsheet/index.html#卧姿动作",
+    "title": "Workout Cheatsheet",
+    "section": "",
+    "text": "先自然平躺，脚尖向前，屈膝，夹球，膝盖尽量靠近胸\n在保证腰始终压住地面的情况下，缓慢使大腿与地面垂直，小腿与地面平行，钩脚尖\n双手手心向内，伸直与地面垂直，肩胛骨稍往上提，背部胸腔打开\n吸气到背部胸腔处，呼气用内收肌夹小球\n保持至内收肌酸痛感（2min左右）\n\n\n\n\n\n先保持静态死虫姿势\n腰部放毛巾 感受腰部往下死劲压的感觉，吸气\n呼气，大腿根部蹬伸出去，保持住腰部往下压\n蹬伸至腰部快有空隙时，吸气，再呼气收回双腿\n至力竭\n\n\n\n\n\n自然平躺，屈膝保持脚尖向前，拇指球轻轻压住地面，夹小球\n双手掌心朝下，自然放在身体两侧\n吸气，呼气时收肚子，骨盆回卷，向上发力带动腰椎，胸椎脱离地面\n至最高处后慢慢下落，先放胸椎，再放腰椎，最后是屁股\n重复10个\n\n臀桥动作注意点：\n\n观察脚尖是否向前\n拇指球始终压住地面\n臀部发力\n\n动作1-3为一组，可做完一组休息，共三组\n\n\n\n\n\n\n自然平躺，双腿自然抬起并屈膝，大腿与地面垂直，小腿与地面平行，双手向前伸，掌心向内\n吸气，呼气同时腹部发力，带动腰和胸远离地面，使手延伸至膝盖内侧\n吸气有控制的慢慢放回\n呼气重复步骤2-3，至力竭\n\n\n\n\n\n自然平躺在瑜伽垫上，双脚自然打开踩住地面\n双手抓住瑜伽垫的两角，吸气，呼气手臂和腹部用力，背部贴住瑜伽垫，使身体向上\n吸气缓缓下落\n呼气重复动作2-3，至力竭\n\n\n\n\n\n自然平躺，屈膝，双手抱住大腿后侧\n吸气，呼气的同时手臂和腹部用力，使腰尽力远离地面\n吸气慢慢有控制放回\n呼气重复步骤2-3，至力竭\n\n卷腹动作注意点：注意力集中在腹部，尽量避免颈部发力"
+  },
+  {
+    "objectID": "posts/2023_08_22_workout_cheatsheet/index.html#站姿动作",
+    "href": "posts/2023_08_22_workout_cheatsheet/index.html#站姿动作",
+    "title": "Workout Cheatsheet",
+    "section": "站姿动作",
+    "text": "站姿动作\n\n 动作5 单腿提踵\n\n靠墙20cm站立，双腿自然打开，脚尖向前，双脚平行，拇指球压紧地面，脚趾头自然放松，双手微微扶墙\n双腿伸直，一只脚抬起远离地面\n吸气，呼气，拇指球用力，向上提踵至最高处\n吸气，再有控制地放下，并在压住拇指球的情况下 保证脚跟外侧先着地\n脚跟快接触地面时，呼气继续提踵，重复步骤3-4\n单侧提踵20次 换脚\n提踵3组后拉伸小腿，1min左右，有拉伸感即可\n\n站姿提踵动作注意点：\n\n脚尖向前，脚伸直\n下落时保证拇指球踩稳地面，脚趾放松\n落地时脚跟外侧先靠近地面，但不要画圈\n收下巴\n\n\n\n动作6 站姿髋外旋保持\n\n双腿打开，自然站立，保持脚尖向前，拇指球压住，脚跟压住\n骨盆回卷，收小腹，\n重心放在脚跟外侧，膝盖外旋，带动臀部收紧\n拉伸：大小腿呈90度，对侧肩膀往膝盖靠，感受屁股拉伸感"
+  },
+  {
+    "objectID": "posts/2022-07-24-R-opencpu/index.html",
+    "href": "posts/2022-07-24-R-opencpu/index.html",
+    "title": "R package test",
+    "section": "",
+    "text": "Step 1: set up server\n\n\nStep 2: 制作docker镜像\n可以理解为将需要的文件进行组合打包。主要利用dockerfile进行制作（安装opencpu, R package等）\n\n\nStep 3: 上传所需要的文件（如R包，数据 etc.)到容器内\n将制作好的R包(制作R包可参考这里)上传到服务器，并将其复制到对应的docker内部。可以利用FTP（File Transfer Protocol）工具来进行上传，上传完毕后安装R包。\n\n\n\nStep 4: 测试R包\n提供接口 URL＋API参数，对 R function(R API) 进行测试,可以利用以下几种工具进行测试： - 利用接口测试工具（如 Postman） - 或者可以利用 Python 的 requests 进行 API 测试； - 或者利用curl命令进行测试\n\n\nStep 5: 提交R包(其他部门测试等)"
   },
   {
     "objectID": "DLSPH.html",
