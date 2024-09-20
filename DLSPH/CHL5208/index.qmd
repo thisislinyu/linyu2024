@@ -3,7 +3,8 @@ title: "CHL5208 practicum course"
 description: |
   slide decks of my practicum
   
-image: penguins.png
+image: practicum.jpg
+date: 2023-11-23
 draft: false
 ---
 > A special thanks to [Dr. Xu](https://www.uhnresearch.ca/researcher/wei-xu) for always supporting me throughout this project!

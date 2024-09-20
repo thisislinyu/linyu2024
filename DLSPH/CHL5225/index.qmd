@@ -3,7 +3,14 @@ title: "CHL5225 Statistical Methods in Clinical Trials"
 description: |
   course notes
   
-image: rct.PNG      
+image: rct.PNG   
+author:
+  - name: Lin Yu
+    url: https://thisislinyu.github.io/
+date: 2024-09-15
+# date-modified: last-modified
+#bibliography: references.bib
+# categories: []
 draft: false
 ---
 

@@ -1,10 +1,15 @@
 ---
-title: 'Scientific Research Writing'
-author: 'Lin Yu'
-date: '2023-07-03'
-tags:
-- Writing
-- Reading notes
+title: "Scientific Research Writing"
+description: |
+  reading notes
+author:
+  - name: Lin Yu
+    url: https://thisislinyu.github.io/
+date: 2023-07-03
+# date-modified: last-modified
+#bibliography: references.bib
+# categories: []
+draft: false
 ---
 
 ## Introduction

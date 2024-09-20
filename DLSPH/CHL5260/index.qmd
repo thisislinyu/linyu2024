@@ -5,14 +5,13 @@ description: |
 author:
   - name: Lin Yu
     url: https://thisislinyu.github.io/
-date: 2022-07-04
+date: 2024-02-29
 # date-modified: last-modified
 #bibliography: references.bib
 # categories: []
-image: seminar.PNG
+image: goal.jpg
 draft: false
 ---
 
-- First-term:[2024/02/29 CHL5260_concpet_proposal](2024_02_29_CHL5260_concpet_proposal.pdf)
+-   First-term:[2024/02/29 concpet proposal](2024_02_29_CHL5260_concpet_proposal.pdf)
 
-<embed src="2024_02_29_CHL5260_concpet_proposal.pdf" type="application/pdf" width="100%" height="600px" />

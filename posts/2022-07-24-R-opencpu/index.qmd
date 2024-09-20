@@ -8,8 +8,7 @@ author:
 date: 2022-07-04
 # date-modified: last-modified
 #bibliography: references.bib
-categories: [R]
-# image: penguins.png
+# categories: []
 draft: false
 ---
 

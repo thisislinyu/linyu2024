@@ -1,9 +1,15 @@
 ---
-title: 'workout cheat sheet'
-author: Lin Yu
-date: '2023-08-22'
-tags:
-- workout
+title: "Workout Cheatsheet"
+description: |
+  死虫、提踵动作要点
+author:
+  - name: Lin Yu
+    url: https://thisislinyu.github.io/
+date: 2023-08-22
+# date-modified: last-modified
+#bibliography: references.bib
+# categories: []
+draft: false
 ---
 
 ## 卧姿动作

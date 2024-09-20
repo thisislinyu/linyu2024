@@ -1,6 +1,19 @@
 ---
-title: "Comps"
+title: "2024 Comps Exam"
+description: |
+  Some of my notes for comps exam
+author:
+  - name: Lin Yu
+    url: https://thisislinyu.github.io/
+date: 2024-08-03
+# date-modified: last-modified
+#bibliography: references.bib
+# categories: []
+draft: false
+image: sunrise.JPG
 ---
+
+> Thinking conditionally is a way of conditional thinking.
 
 ## Part I
 
@@ -31,8 +44,8 @@ title: "Comps"
 -   [Generating random variables](Generating%20random%20variables.pdf)
 
 ## Past exams
-[TBD]
-## Part III
+
+\[TBD\] \## Part III
 
 -   [Github repo](https://github.com/thisislinyu/2024PARTIII)
 
